@@ -158,7 +158,10 @@ static void prvQueueSendTask( void *pvParameters );
 static QueueHandle_t xQueue = NULL;
 
 /*-----------------------------------------------------------*/
-
+void main_blinky( void );
+int main( void ){
+    main_blinky();
+}
 void main_blinky( void )
 {
 	/* Create the queue. */
@@ -248,8 +251,8 @@ unsigned long ulReceivedValue;
 			/* Normally calling printf() from a task is not a good idea.  Here
 			there is lots of stack space and only one task is using console  IO
 			so it is ok. */
-			printf( "Message received\r\n" );
-			fflush( stdout );
+            printf( "Message received\r\n" );
+            fflush( stdout );
 			ulReceivedValue = 0U;
 		}
 	}

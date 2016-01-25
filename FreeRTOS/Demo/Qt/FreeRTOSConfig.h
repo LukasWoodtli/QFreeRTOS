@@ -83,8 +83,8 @@
 
 #define configUSE_PREEMPTION					1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION	1
-#define configUSE_IDLE_HOOK						1
-#define configUSE_TICK_HOOK						1
+#define configUSE_IDLE_HOOK						0
+#define configUSE_TICK_HOOK						0
 #define configTICK_RATE_HZ						( 1000 ) /* In this non-real time simulated environment the tick frequency has to be at least a multiple of the Win32 tick frequency, and therefore very slow. */
 #define configMINIMAL_STACK_SIZE				( ( unsigned short ) 50 ) /* In this simulated case, the stack only has to hold one small structure as the real stack is part of the win32 thread. */
 #define configTOTAL_HEAP_SIZE					( ( size_t ) ( 23 * 1024 ) )
@@ -96,7 +96,7 @@
 #define configCHECK_FOR_STACK_OVERFLOW			0
 #define configUSE_RECURSIVE_MUTEXES				1
 #define configQUEUE_REGISTRY_SIZE				20
-#define configUSE_MALLOC_FAILED_HOOK			1
+#define configUSE_MALLOC_FAILED_HOOK			0
 #define configUSE_APPLICATION_TASK_TAG			1
 #define configUSE_COUNTING_SEMAPHORES			1
 #define configUSE_ALTERNATIVE_API				1
@@ -115,7 +115,7 @@
 unsigned long ulGetRunTimeCounterValue( void ); /* Prototype of function that returns run time counter. */
 void vConfigureTimerForRunTimeStats( void );	/* Prototype of function that initialises the run time counter. */
 #define configGENERATE_RUN_TIME_STATS			1
-#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() vConfigureTimerForRunTimeStats()
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() // vConfigureTimerForRunTimeStats()
 #define portGET_RUN_TIME_COUNTER_VALUE() ulGetRunTimeCounterValue()
 
 /* Co-routine related configuration options. */
@@ -150,11 +150,11 @@ functions anyway. */
 /* It is a good idea to define configASSERT() while developing.  configASSERT()
 uses the same semantics as the standard C assert() macro. */
 extern void vAssertCalled( unsigned long ulLine, const char * const pcFileName );
-#define configASSERT( x ) if( ( x ) == 0 ) vAssertCalled( __LINE__, __FILE__ )
+#define configASSERT( x ) // TODO: Q_ASSERT?? if( ( x ) == 0 ) vAssertCalled( __LINE__, __FILE__ )
 
 /* Include the FreeRTOS+Trace FreeRTOS trace macro definitions. */
-#define TRACE_ENTER_CRITICAL_SECTION() portENTER_CRITICAL()
-#define TRACE_EXIT_CRITICAL_SECTION() portEXIT_CRITICAL()
-#include "trcKernelPort.h"
+//#define TRACE_ENTER_CRITICAL_SECTION() portENTER_CRITICAL()
+//#define TRACE_EXIT_CRITICAL_SECTION() portEXIT_CRITICAL()
+//#include "trcKernelPort.h"
 
 #endif /* FREERTOS_CONFIG_H */

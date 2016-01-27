@@ -119,12 +119,20 @@
  */
 
 /* Standard includes. */
-#include <stdio.h>
+#include <iostream>
+
+/* Qt includes */
+#include <QObject>
+#include <QCoreApplication>
+#include <QTimer>
+#include <QDebug>
 
 /* Kernel includes. */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+
+#include "mainclass.h"
 
 /* Priorities at which the tasks are created. */
 #define mainQUEUE_RECEIVE_TASK_PRIORITY		( tskIDLE_PRIORITY + 2 )
@@ -159,9 +167,27 @@ static QueueHandle_t xQueue = NULL;
 
 /*-----------------------------------------------------------*/
 void main_blinky( void );
-int main( void ){
-    main_blinky();
+
+
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication app(argc, argv);
+    qDebug() << "Starting...";
+
+    // create the main class
+    MainClass myMain(&main_blinky);
+
+
+    /*QObject::connect(&app, SIGNAL(aboutToQuit()),
+             &myMain, SLOT(aboutToQuitApp()));*/
+
+    // This code will start the messaging engine in QT and in
+    // 10ms it will start the execution in the MainClass.run routine;
+    QTimer::singleShot(1, &myMain, SLOT(run()));
+    return app.exec();
 }
+
 void main_blinky( void )
 {
 	/* Create the queue. */
@@ -251,8 +277,8 @@ unsigned long ulReceivedValue;
 			/* Normally calling printf() from a task is not a good idea.  Here
 			there is lots of stack space and only one task is using console  IO
 			so it is ok. */
-            printf( "Message received\r\n" );
-            fflush( stdout );
+            std::cout << "Message received" << std::endl;
+            //fflush( stdout );
 			ulReceivedValue = 0U;
 		}
 	}

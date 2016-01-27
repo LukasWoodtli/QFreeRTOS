@@ -71,21 +71,40 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/* Qt includes */
+#include <QMutex>
+#include <QWaitCondition>
+#include <QThread>
+#include <QDebug>
+#include <QTimer>
+
 /* Scheduler includes. */
 #include "FreeRTOS.h"
 #include "task.h"
+
+#include "simulatedtask.h"
+#include "simulatedperipheraltimer.h"
 
 
 #define portMAX_INTERRUPTS				( ( uint32_t ) sizeof( uint32_t ) * 8UL ) /* The number of bits in an uint32_t. */
 #define portNO_CRITICAL_NESTING 		( ( uint32_t ) 0 )
 
-/*
- * Created as a high priority thread, this function uses a timer to simulate
- * a tick interrupt being generated on an embedded target.  In this Windows
- * environment the timer does not achieve anything approaching real time
- * performance though.
- */
-static uint32_t prvSimulatedPeripheralTimer( void * lpParameter );
+
+#define THREAD_TASK_IDLE_PRIO  QThread::IdlePriority
+#define THREAD_TASK_RUNNING_PRIO QThread::HighPriority
+#define THREAD_IRQ_PRIO QThread::HighestPriority
+#define THREAD_SV_TIMER_PRIO QThread::TimeCriticalPriority
+
+
+void vPortAssert(bool cond, unsigned long ulLine, const char * const pcFileName )
+{
+    if (!cond)
+    {
+        QString mssg = QString("%s (%i)").arg(pcFileName).arg(ulLine);
+
+        qFatal(mssg.toLocal8Bit());
+    }
+}
 
 /*
  * Process all the simulated interrupts - each represented by a bit in
@@ -106,11 +125,11 @@ static uint32_t prvProcessTickInterrupt( void );
  */
 static bool prvEndProcess( uint32_t dwCtrlType );
 
-static void sleepCurrentThread(unsigned long timeout);
+static inline void sleepCurrentThread(unsigned long timeout);
 
 static void sleepCurrentThread(unsigned long timeout)
 {
-    // QThread::getcurrentThread()->sleep(...);
+    QThread::currentThread()->sleep(timeout);
 }
 
 unsigned long ulGetRunTimeCounterValue( void )
@@ -121,6 +140,11 @@ unsigned long ulGetRunTimeCounterValue( void )
 
 /*-----------------------------------------------------------*/
 
+
+QTimer * mod_intervallTimer = NULL;
+SimulatedPeripheralTimer * mod_simPeripheralTimer = NULL;
+
+
 /* The WIN32 simulator runs each task in a thread.  The context switching is
 managed by the threads, so the task stack does not have to be managed directly,
 although the task stack is still used to hold an xThreadState structure this is
@@ -129,7 +153,7 @@ to a thread handle. */
 typedef struct
 {
 	/* Handle of the thread that executes the task. */
-	void *pvThread;
+    SimulatedTask *pvThread;
 
 } xThreadState;
 
@@ -140,11 +164,13 @@ static volatile uint32_t ulPendingInterrupts = 0UL;
 /* An event used to inform the simulated interrupt processing thread (a high
 priority thread that simulated interrupt processing) that an interrupt is
 pending. */
-static void *pvInterruptEvent = NULL;
+static QWaitCondition *pvInterruptEvent = NULL;
+//static void *pvInterruptEvent = NULL;
 
 /* Mutex used to protect all the simulated interrupt variables that are accessed
 by multiple threads. */
-static void *pvInterruptEventMutex = NULL;
+static QMutex *pvInterruptEventMutex = NULL;
+//static void *pvInterruptEventMutex = NULL;
 
 /* The critical nesting count for the currently executing task.  This is
 initialised to a non-zero value so interrupts do not become enabled during
@@ -168,59 +194,28 @@ static BaseType_t xPortRunning = pdFALSE;
 
 /*-----------------------------------------------------------*/
 
-static uint32_t prvSimulatedPeripheralTimer( void * lpParameter )
+extern "C" void prvSimulatedPeripheralTimer()
 {
-/* Qt doc The accuracy also depends on the timer type. For Qt::PreciseTimer, QTimer will try to keep the accurance at 1 millisecond. */
-TickType_t xMinimumWindowsBlockTime;
+    configASSERT( xPortRunning );
 
-	/* Set the timer resolution to the maximum possible. */
-    xMinimumWindowsBlockTime = ( TickType_t ) 1; //ms
+    pvInterruptEventMutex->lock();
+    pvInterruptEvent->wait(pvInterruptEventMutex);
 
-	/* Just to prevent compiler warnings. */
-	( void ) lpParameter;
+    /* The timer has expired, generate the simulated tick event. */
+    ulPendingInterrupts |= ( 1 << portINTERRUPT_TICK );
 
-	for( ;; )
-	{
-		/* Wait until the timer expires and we can access the simulated interrupt
-		variables.  *NOTE* this is not a 'real time' way of generating tick
-		events as the next wake time should be relative to the previous wake
-		time, not the time that Sleep() is called.  It is done this way to
-		prevent overruns in this very non real time simulated/emulated
-		environment. */
-		if( portTICK_PERIOD_MS < xMinimumWindowsBlockTime )
-		{
-            sleepCurrentThread( xMinimumWindowsBlockTime );
-		}
-		else
-		{
-            sleepCurrentThread( portTICK_PERIOD_MS );
-		}
+    /* The interrupt is now pending - notify the simulated interrupt
+        handler thread. */
+    if( ulCriticalNesting == 0 )
+    {
+        pvInterruptEvent->wakeAll();
+    }
 
-		configASSERT( xPortRunning );
-
-        // TODO use QMutex::lock instead WaitForSingleObject( pvInterruptEventMutex, INFINITE );
-
-		/* The timer has expired, generate the simulated tick event. */
-		ulPendingInterrupts |= ( 1 << portINTERRUPT_TICK );
-
-		/* The interrupt is now pending - notify the simulated interrupt
-		handler thread. */
-		if( ulCriticalNesting == 0 )
-		{
-// TODO use QWaitCond.			SetEvent( pvInterruptEvent );
-		}
-
-		/* Give back the mutex so the simulated interrupt handler unblocks
-		and can	access the interrupt handler variables. */
-// TODO Use QMutex		ReleaseMutex( pvInterruptEventMutex );
-	}
-
-	#ifdef __GNUC__
-		/* Should never reach here - MingW complains if you leave this line out,
-		MSVC complains if you put it in. */
-		return 0;
-	#endif
+    /* Give back the mutex so the simulated interrupt handler unblocks
+        and can	access the interrupt handler variables. */
+    pvInterruptEventMutex->unlock();
 }
+
 /*-----------------------------------------------------------*/
 
 static bool prvEndProcess( uint32_t dwCtrlType )
@@ -241,7 +236,7 @@ xThreadState *pxThreadState = NULL;
 int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 
 	/* In this simulated case a stack is not initialised, but instead a thread
-	is created that will execute the task being created.  The thread handles
+    is created that will execute the task being created.  The thread handles
 	the context switching itself.  The xThreadState object is placed onto
 	the stack that was created for the task - so the stack buffer is still
 	used, just not in the conventional way.  It will not be used for anything
@@ -249,11 +244,8 @@ int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 	pxThreadState = ( xThreadState * ) ( pcTopOfStack - sizeof( xThreadState ) );
 
 	/* Create the thread itself. */
-    // TODO use QThread here: pxThreadState->pvThread = CreateThread( NULL, 0, ( LPTHREAD_START_ROUTINE ) pxCode, pvParameters, CREATE_SUSPENDED, NULL );
-	configASSERT( pxThreadState->pvThread );
-    // TODO use QThread here: SetThreadAffinityMask( pxThreadState->pvThread, 0x01 );
-    // TODO use QThread here: SetThreadPriorityBoost( pxThreadState->pvThread, TRUE );
-    // TODO use QThread here: SetThreadPriority( pxThreadState->pvThread, THREAD_PRIORITY_IDLE );
+    pxThreadState->pvThread = new SimulatedTask(pxCode, pvParameters);
+    configASSERT( pxThreadState->pvThread );
 
 	return ( StackType_t * ) pxThreadState;
 }
@@ -261,7 +253,7 @@ int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 
 BaseType_t xPortStartScheduler( void )
 {
-void *pvHandle;
+QThread *pvHandle;
 int32_t lSuccess = pdPASS;
 xThreadState *pxThreadState;
 
@@ -271,8 +263,8 @@ xThreadState *pxThreadState;
 
 	/* Create the events and mutexes that are used to synchronise all the
 	threads. */
-    // TODO use QMutex here: pvInterruptEventMutex = CreateMutex( NULL, FALSE, NULL );
-    // TODO use Qt events here ??? pvInterruptEvent = CreateEvent( NULL, FALSE, FALSE, NULL );
+    pvInterruptEventMutex = new QMutex();
+    pvInterruptEvent = new QWaitCondition();
 
 	if( ( pvInterruptEventMutex == NULL ) || ( pvInterruptEvent == NULL ) )
 	{
@@ -282,7 +274,7 @@ xThreadState *pxThreadState;
 	/* Set the priority of this thread such that it is above the priority of
 	the threads that run tasks.  This higher priority is required to ensure
 	simulated interrupts take priority over tasks. */
-    pvHandle = NULL; // TODO QThread... GetCurrentThread();
+    pvHandle = QThread::currentThread();
 	if( pvHandle == NULL )
 	{
 		lSuccess = pdFAIL;
@@ -290,12 +282,7 @@ xThreadState *pxThreadState;
 
 	if( lSuccess == pdPASS )
 	{
-// TODO use QThread here		if( SetThreadPriority( pvHandle, THREAD_PRIORITY_NORMAL ) == 0 )
-		{
-			lSuccess = pdFAIL;
-		}
-// TODO use QThread here		SetThreadPriorityBoost( pvHandle, TRUE );
-// TODO use QThread here		SetThreadAffinityMask( pvHandle, 0x01 );
+        pvHandle->setPriority(THREAD_SV_TIMER_PRIO); //? prion? THREAD_PRIORITY_NORMAL
 	}
 
 	if( lSuccess == pdPASS )
@@ -304,14 +291,15 @@ xThreadState *pxThreadState;
 		tick interrupts.  The priority is set below that of the simulated
 		interrupt handler so the interrupt event mutex is used for the
 		handshake / overrun protection. */
-// TODO use QThread here		pvHandle = CreateThread( NULL, 0, prvSimulatedPeripheralTimer, NULL, CREATE_SUSPENDED, NULL );
-		if( pvHandle != NULL )
-		{
-// TODO use QThread here			SetThreadPriority( pvHandle, THREAD_PRIORITY_BELOW_NORMAL );
-// TODO use QThread here			SetThreadPriorityBoost( pvHandle, TRUE );
-// TODO use QThread here			SetThreadAffinityMask( pvHandle, 0x01 );
-// TODO use QThread here			ResumeThread( pvHandle );
-		}
+        mod_intervallTimer = new QTimer();
+        mod_simPeripheralTimer = new SimulatedPeripheralTimer();
+        Q_ASSERT(mod_intervallTimer != NULL);
+        Q_ASSERT(mod_simPeripheralTimer != NULL);
+        QObject::connect(mod_intervallTimer, SIGNAL(timeout()), mod_simPeripheralTimer, SLOT(timerShot()));
+        mod_intervallTimer->setInterval(portTICK_PERIOD_MS);
+        mod_intervallTimer->setTimerType(Qt::PreciseTimer);
+        mod_intervallTimer->start(); // TODO Prio? THREAD_PRIORITY_BELOW_NORMAL
+
 
 		/* Start the highest priority task by obtaining its associated thread
 		state structure, in which is stored the thread handle. */
@@ -320,8 +308,9 @@ xThreadState *pxThreadState;
 
 		/* Bump up the priority of the thread that is going to run, in the
 		hope that this will assist in getting the Windows thread scheduler to
-		behave as an embedded engineer might expect. */
-// QThread		ResumeThread( pxThreadState->pvThread );
+        behave as an embedded engineer might expect. */
+        pxThreadState->pvThread->setPriority(THREAD_TASK_RUNNING_PRIO);
+
 
 		/* Handle all simulated interrupts - including yield requests and
 		simulated ticks. */
@@ -356,25 +345,18 @@ static void prvProcessSimulatedInterrupts( void )
 {
 uint32_t ulSwitchRequired, i;
 xThreadState *pxThreadState;
-void *pvObjectList[ 2 ];
-// TODO Use Qt API here CONTEXT xContext;
-
-	/* Going to block on the mutex that ensured exclusive access to the simulated
-	interrupt objects, and the event that signals that a simulated interrupt
-	should be processed. */
-	pvObjectList[ 0 ] = pvInterruptEventMutex;
-	pvObjectList[ 1 ] = pvInterruptEvent;
 
 	/* Create a pending tick to ensure the first task is started as soon as
 	this thread pends. */
 	ulPendingInterrupts |= ( 1 << portINTERRUPT_TICK );
-// TODO Use QWaitCondition	SetEvent( pvInterruptEvent );
+    pvInterruptEvent->wakeAll(); //?
 
 	xPortRunning = pdTRUE;
 
 	for(;;)
 	{
-// TODO Use QMutex here		WaitForMultipleObjects( sizeof( pvObjectList ) / sizeof( void * ), pvObjectList, TRUE, INFINITE );
+        pvInterruptEventMutex->lock();
+        pvInterruptEvent->wait(pvInterruptEventMutex);
 
 		/* Used to indicate whether the simulated interrupt processing has
 		necessitated a context switch to another task/thread. */
@@ -417,7 +399,10 @@ void *pvObjectList[ 2 ];
 			{
 				/* Suspend the old thread. */
 				pxThreadState = ( xThreadState *) *( ( size_t * ) pvOldCurrentTCB );
-// TODO Use QThread?				SuspendThread( pxThreadState->pvThread );
+                pxThreadState->pvThread->setPriority(THREAD_TASK_IDLE_PRIO);
+                pxThreadState->pvThread->requestInterruption();
+                // todo QThread::yieldCurrentThread()
+
 
 				/* Ensure the thread is actually suspended by performing a 
 				synchronous operation that can only complete when the thread is 
@@ -429,11 +414,12 @@ void *pvObjectList[ 2 ];
 				/* Obtain the state of the task now selected to enter the
 				Running state. */
 				pxThreadState = ( xThreadState * ) ( *( size_t *) pxCurrentTCB );
-// TODO Use QThread?				ResumeThread( pxThreadState->pvThread );
+                pxThreadState->pvThread->setPriority(THREAD_TASK_RUNNING_PRIO);
+                // todo assert running thread is the right one
 			}
 		}
 
-// TODO Use QMutex		ReleaseMutex( pvInterruptEventMutex );
+        pvInterruptEventMutex->unlock();
 	}
 }
 /*-----------------------------------------------------------*/
@@ -455,15 +441,16 @@ uint32_t ulErrorCode;
 	different task. */
 	if( pxThreadState->pvThread != NULL )
 	{
-// Todo Use QMutex here		WaitForSingleObject( pvInterruptEventMutex, INFINITE );
+        pvInterruptEventMutex->lock();
 
-// TODO Terminate thread		ulErrorCode = TerminateThread( pxThreadState->pvThread, 0 );
-//		configASSERT( ulErrorCode );
+        //QThread::setTerminationEnabled();
+        pxThreadState->pvThread->terminate();
+        // not to wait? pxThreadState->pvThread->wait(1);
 
-// TODO del thread obj		ulErrorCode = CloseHandle( pxThreadState->pvThread );
-// and 		configASSERT( ulErrorCode );
+        delete pxThreadState->pvThread;
+        pxThreadState->pvThread = NULL;
 
-// TODO		ReleaseMutex( pvInterruptEventMutex );
+        pvInterruptEventMutex->unlock();
 	}
 }
 /*-----------------------------------------------------------*/
@@ -471,7 +458,7 @@ uint32_t ulErrorCode;
 void vPortCloseRunningThread( void *pvTaskToDelete, volatile BaseType_t *pxPendYield )
 {
 xThreadState *pxThreadState;
-void *pvThread;
+QThread *pvThread;
 uint32_t ulErrorCode;
 
 	/* Remove compiler warnings if configASSERT() is not defined. */
@@ -485,8 +472,8 @@ uint32_t ulErrorCode;
 	does not run and swap it out before it is closed.  If that were to happen
 	the thread would never run again and effectively be a thread handle and
 	memory leak. */
-// Todo Use Qt API here	SetThreadPriority( pvThread, THREAD_PRIORITY_ABOVE_NORMAL );
 
+    pvThread->setPriority(THREAD_SV_TIMER_PRIO);
 	/* This function will not return, therefore a yield is set as pending to
 	ensure a context switch occurs away from this thread on the next tick. */
 	*pxPendYield = pdTRUE;
@@ -496,10 +483,9 @@ uint32_t ulErrorCode;
 	pxThreadState->pvThread = NULL;
 
 	/* Close the thread. */
-// TODO Use QThread?	ulErrorCode = CloseHandle( pvThread );
-//	configASSERT( ulErrorCode );
+    delete pvThread; // TODO ???
 
-// TODO Use QThread?	ExitThread( 0 );
+    QThread::currentThread()->exit(0);
 }
 /*-----------------------------------------------------------*/
 
@@ -517,7 +503,9 @@ void vPortGenerateSimulatedInterrupt( uint32_t ulInterruptNumber )
 	if( ( ulInterruptNumber < portMAX_INTERRUPTS ) && ( pvInterruptEventMutex != NULL ) )
 	{
 		/* Yield interrupts are processed even when critical nesting is non-zero. */
-// Todo Use QMutex API here		WaitForSingleObject( pvInterruptEventMutex, INFINITE );
+        pvInterruptEventMutex->lock();
+        pvInterruptEvent->wait(pvInterruptEventMutex);
+
 		ulPendingInterrupts |= ( 1 << ulInterruptNumber );
 
 		/* The simulated interrupt is now held pending, but don't actually process it
@@ -525,10 +513,10 @@ void vPortGenerateSimulatedInterrupt( uint32_t ulInterruptNumber )
 		be in a critical section as calls to wait for mutexes are accumulative. */
 		if( ulCriticalNesting == 0 )
 		{
-// TODO Use QMutex			SetEvent( pvInterruptEvent );
+            pvInterruptEvent->wakeAll();
 		}
 
-// TODO Use QMutex		ReleaseMutex( pvInterruptEventMutex );
+        pvInterruptEventMutex->unlock();
 	}
 }
 /*-----------------------------------------------------------*/
@@ -539,9 +527,9 @@ void vPortSetInterruptHandler( uint32_t ulInterruptNumber, uint32_t (*pvHandler)
 	{
 		if( pvInterruptEventMutex != NULL )
 		{
-// Todo Use QMutex API here			WaitForSingleObject( pvInterruptEventMutex, INFINITE );
+            pvInterruptEventMutex->lock();
 			ulIsrHandler[ ulInterruptNumber ] = pvHandler;
-// TODO Use QMutex			ReleaseMutex( pvInterruptEventMutex );
+            pvInterruptEventMutex->unlock();
 		}
 		else
 		{
@@ -557,7 +545,7 @@ void vPortEnterCritical( void )
 	{
 		/* The interrupt event mutex is held for the entire critical section,
 		effectively disabling (simulated) interrupts. */
-// Todo Use QMutex API here		WaitForSingleObject( pvInterruptEventMutex, INFINITE );
+        pvInterruptEventMutex->lock();
 		ulCriticalNesting++;
 	}
 	else
@@ -587,12 +575,12 @@ int32_t lMutexNeedsReleasing;
 			if( ulPendingInterrupts != 0UL )
 			{
 				configASSERT( xPortRunning );
-// TODO Use QWaitCond.				SetEvent( pvInterruptEvent );
+                pvInterruptEvent->wakeAll();
 
 				/* Mutex will be released now, so does not require releasing
 				on function exit. */
 				lMutexNeedsReleasing = pdFALSE;
-// TODO Use QMutex				ReleaseMutex( pvInterruptEventMutex );
+                pvInterruptEventMutex->unlock();
 			}
 		}
 		else
@@ -608,7 +596,7 @@ int32_t lMutexNeedsReleasing;
 		if( lMutexNeedsReleasing == pdTRUE )
 		{
 			configASSERT( xPortRunning );
-// TODO Use QMutex			ReleaseMutex( pvInterruptEventMutex );
+            pvInterruptEventMutex->unlock();
 		}
 	}
 }

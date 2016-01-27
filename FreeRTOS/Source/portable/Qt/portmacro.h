@@ -193,5 +193,18 @@ void vPortGenerateSimulatedInterrupt( uint32_t ulInterruptNumber );
  */
 void vPortSetInterruptHandler( uint32_t ulInterruptNumber, uint32_t (*pvHandler)( void ) );
 
+
+
+/*
+ * Created as a high priority thread, this function uses a timer to simulate
+ * a tick interrupt being generated on an embedded target.  In this Windows
+ * environment the timer does not achieve anything approaching real time
+ * performance though.
+ */
+#ifdef __cplusplus
+extern "C"
+#endif
+void prvSimulatedPeripheralTimer( );
+
 #endif
 

@@ -71,6 +71,7 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
+#include <stdbool.h>
 /*-----------------------------------------------------------
  * Application specific definitions.
  *
@@ -149,8 +150,8 @@ functions anyway. */
 
 /* It is a good idea to define configASSERT() while developing.  configASSERT()
 uses the same semantics as the standard C assert() macro. */
-extern void vAssertCalled( unsigned long ulLine, const char * const pcFileName );
-#define configASSERT( x ) // TODO: Q_ASSERT?? if( ( x ) == 0 ) vAssertCalled( __LINE__, __FILE__ )
+extern void vPortAssert(bool cond, unsigned long ulLine, const char * const pcFileName );
+#define configASSERT( x ) vPortAssert(x, __LINE__, __FILE__ )
 
 /* Include the FreeRTOS+Trace FreeRTOS trace macro definitions. */
 //#define TRACE_ENTER_CRITICAL_SECTION() portENTER_CRITICAL()

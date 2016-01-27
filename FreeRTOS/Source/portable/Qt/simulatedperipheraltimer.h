@@ -1,20 +1,34 @@
 #ifndef SIMULATEDPERIPHERALTIMER_H
 #define SIMULATEDPERIPHERALTIMER_H
 
-#include <QObject>
+#include <QThread>
+#include <functional>
 
-class SimulatedPeripheralTimer : public QObject
+class QTimer;
+class QMutex;
+class QWaitCondition;
+
+typedef void (*timerInterruptHandler_t)(void);
+
+class SimulatedPeripheralTimer : public QThread
 {
     Q_OBJECT
 public:
-    explicit SimulatedPeripheralTimer(QObject *parent = 0);
+    SimulatedPeripheralTimer(timerInterruptHandler_t function,
+                             QObject *parent = 0);
+    void startTimer();
 
-public slots:
+protected slots:
     void timerShot();
 
-signals:
+protected:
+    virtual void run();
 
-public slots:
+
+private:
+    QTimer * const m_intervallTimer;
+
+    timerInterruptHandler_t m_function;
 };
 
 #endif // SIMULATEDPERIPHERALTIMER_H

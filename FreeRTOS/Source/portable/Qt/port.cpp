@@ -90,19 +90,14 @@
 #define portNO_CRITICAL_NESTING 		( ( uint32_t ) 0 )
 
 
-#define THREAD_TASK_IDLE_PRIO  QThread::IdlePriority
-#define THREAD_TASK_RUNNING_PRIO QThread::HighPriority
-#define THREAD_IRQ_PRIO QThread::HighestPriority
-#define THREAD_SV_TIMER_PRIO QThread::TimeCriticalPriority
+
 
 
 void vPortAssert(bool cond, unsigned long ulLine, const char * const pcFileName )
 {
     if (!cond)
     {
-        QString mssg = QString("%s (%i)").arg(pcFileName).arg(ulLine);
-
-        qFatal(mssg.toLocal8Bit());
+        qFatal("%s (%i)", pcFileName, ulLine);
     }
 }
 
@@ -118,6 +113,7 @@ static void prvProcessSimulatedInterrupts( void );
  */
 static uint32_t prvProcessYieldInterrupt( void );
 static uint32_t prvProcessTickInterrupt( void );
+
 
 /*
  * Called when the process exits to let Windows know the high timer resolution
@@ -141,7 +137,7 @@ unsigned long ulGetRunTimeCounterValue( void )
 /*-----------------------------------------------------------*/
 
 
-QTimer * mod_intervallTimer = NULL;
+
 SimulatedPeripheralTimer * mod_simPeripheralTimer = NULL;
 
 
@@ -194,7 +190,7 @@ static BaseType_t xPortRunning = pdFALSE;
 
 /*-----------------------------------------------------------*/
 
-extern "C" void prvSimulatedPeripheralTimer()
+static void prvSimulatedPeripheralTimer()
 {
     configASSERT( xPortRunning );
 
@@ -215,6 +211,7 @@ extern "C" void prvSimulatedPeripheralTimer()
         and can	access the interrupt handler variables. */
     pvInterruptEventMutex->unlock();
 }
+
 
 /*-----------------------------------------------------------*/
 
@@ -246,6 +243,7 @@ int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 	/* Create the thread itself. */
     pxThreadState->pvThread = new SimulatedTask(pxCode, pvParameters);
     configASSERT( pxThreadState->pvThread );
+    pxThreadState->pvThread->start(THREAD_TASK_IDLE_PRIO);
 
 	return ( StackType_t * ) pxThreadState;
 }
@@ -282,7 +280,7 @@ xThreadState *pxThreadState;
 
 	if( lSuccess == pdPASS )
 	{
-        pvHandle->setPriority(THREAD_SV_TIMER_PRIO); //? prion? THREAD_PRIORITY_NORMAL
+     //   pvHandle->setPriority(THREAD_SV_TIMER_PRIO); //? prion? THREAD_PRIORITY_NORMAL
 	}
 
 	if( lSuccess == pdPASS )
@@ -291,14 +289,11 @@ xThreadState *pxThreadState;
 		tick interrupts.  The priority is set below that of the simulated
 		interrupt handler so the interrupt event mutex is used for the
 		handshake / overrun protection. */
-        mod_intervallTimer = new QTimer();
-        mod_simPeripheralTimer = new SimulatedPeripheralTimer();
-        Q_ASSERT(mod_intervallTimer != NULL);
+        Q_ASSERT(pvInterruptEventMutex != NULL);
+        Q_ASSERT(pvInterruptEvent != NULL);
+        mod_simPeripheralTimer = new SimulatedPeripheralTimer(prvSimulatedPeripheralTimer);
         Q_ASSERT(mod_simPeripheralTimer != NULL);
-        QObject::connect(mod_intervallTimer, SIGNAL(timeout()), mod_simPeripheralTimer, SLOT(timerShot()));
-        mod_intervallTimer->setInterval(portTICK_PERIOD_MS);
-        mod_intervallTimer->setTimerType(Qt::PreciseTimer);
-        mod_intervallTimer->start(); // TODO Prio? THREAD_PRIORITY_BELOW_NORMAL
+        mod_simPeripheralTimer->startTimer();
 
 
 		/* Start the highest priority task by obtaining its associated thread

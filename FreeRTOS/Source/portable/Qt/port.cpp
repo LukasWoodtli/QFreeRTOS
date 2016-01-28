@@ -243,7 +243,7 @@ int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 	/* Create the thread itself. */
     pxThreadState->pvThread = new SimulatedTask(pxCode, pvParameters);
     configASSERT( pxThreadState->pvThread );
-    pxThreadState->pvThread->start(THREAD_TASK_IDLE_PRIO);
+
 
 	return ( StackType_t * ) pxThreadState;
 }
@@ -252,7 +252,6 @@ int8_t *pcTopOfStack = ( int8_t * ) pxTopOfStack;
 BaseType_t xPortStartScheduler( void )
 {
 QThread *pvHandle;
-int32_t lSuccess = pdPASS;
 xThreadState *pxThreadState;
 
 	/* Install the interrupt handlers used by the scheduler itself. */
@@ -264,53 +263,41 @@ xThreadState *pxThreadState;
     pvInterruptEventMutex = new QMutex();
     pvInterruptEvent = new QWaitCondition();
 
-	if( ( pvInterruptEventMutex == NULL ) || ( pvInterruptEvent == NULL ) )
-	{
-		lSuccess = pdFAIL;
-	}
+    Q_ASSERT(pvInterruptEventMutex != NULL);
+    Q_ASSERT(pvInterruptEvent != NULL);
 
 	/* Set the priority of this thread such that it is above the priority of
 	the threads that run tasks.  This higher priority is required to ensure
 	simulated interrupts take priority over tasks. */
     pvHandle = QThread::currentThread();
-	if( pvHandle == NULL )
-	{
-		lSuccess = pdFAIL;
-	}
-
-	if( lSuccess == pdPASS )
-	{
-     //   pvHandle->setPriority(THREAD_SV_TIMER_PRIO); //? prion? THREAD_PRIORITY_NORMAL
-	}
-
-	if( lSuccess == pdPASS )
-	{
-		/* Start the thread that simulates the timer peripheral to generate
-		tick interrupts.  The priority is set below that of the simulated
-		interrupt handler so the interrupt event mutex is used for the
-		handshake / overrun protection. */
-        Q_ASSERT(pvInterruptEventMutex != NULL);
-        Q_ASSERT(pvInterruptEvent != NULL);
-        mod_simPeripheralTimer = new SimulatedPeripheralTimer(prvSimulatedPeripheralTimer);
-        Q_ASSERT(mod_simPeripheralTimer != NULL);
-        mod_simPeripheralTimer->startTimer();
+    Q_ASSERT(pvHandle);
 
 
-		/* Start the highest priority task by obtaining its associated thread
-		state structure, in which is stored the thread handle. */
-		pxThreadState = ( xThreadState * ) *( ( size_t * ) pxCurrentTCB );
-		ulCriticalNesting = portNO_CRITICAL_NESTING;
+    /* Start the thread that simulates the timer peripheral to generate
+        tick interrupts.  The priority is set below that of the simulated
+        interrupt handler so the interrupt event mutex is used for the
+        handshake / overrun protection. */
+    Q_ASSERT(pvInterruptEventMutex != NULL);
+    Q_ASSERT(pvInterruptEvent != NULL);
+    mod_simPeripheralTimer = new SimulatedPeripheralTimer(prvSimulatedPeripheralTimer);
+    Q_ASSERT(mod_simPeripheralTimer != NULL);
+    mod_simPeripheralTimer->startTimer();
 
-		/* Bump up the priority of the thread that is going to run, in the
-		hope that this will assist in getting the Windows thread scheduler to
+
+    /* Start the highest priority task by obtaining its associated thread
+        state structure, in which is stored the thread handle. */
+    pxThreadState = ( xThreadState * ) *( ( size_t * ) pxCurrentTCB );
+    ulCriticalNesting = portNO_CRITICAL_NESTING;
+
+    /* Bump up the priority of the thread that is going to run, in the
+        hope that this will assist in getting the Windows thread scheduler to
         behave as an embedded engineer might expect. */
-        pxThreadState->pvThread->setPriority(THREAD_TASK_RUNNING_PRIO);
+    pxThreadState->pvThread->start(THREAD_TASK_RUNNING_PRIO);
 
 
-		/* Handle all simulated interrupts - including yield requests and
-		simulated ticks. */
-		prvProcessSimulatedInterrupts();
-	}
+    /* Handle all simulated interrupts - including yield requests and
+        simulated ticks. */
+    prvProcessSimulatedInterrupts();
 
 	/* Would not expect to return from prvProcessSimulatedInterrupts(), so should
 	not get here. */
@@ -394,9 +381,8 @@ xThreadState *pxThreadState;
 			{
 				/* Suspend the old thread. */
 				pxThreadState = ( xThreadState *) *( ( size_t * ) pvOldCurrentTCB );
+                Q_ASSERT(pxThreadState->pvThread->isRunning());
                 pxThreadState->pvThread->setPriority(THREAD_TASK_IDLE_PRIO);
-                pxThreadState->pvThread->requestInterruption();
-                // todo QThread::yieldCurrentThread()
 
 
 				/* Ensure the thread is actually suspended by performing a 
@@ -409,8 +395,21 @@ xThreadState *pxThreadState;
 				/* Obtain the state of the task now selected to enter the
 				Running state. */
 				pxThreadState = ( xThreadState * ) ( *( size_t *) pxCurrentTCB );
-                pxThreadState->pvThread->setPriority(THREAD_TASK_RUNNING_PRIO);
-                // todo assert running thread is the right one
+                if (pxThreadState->pvThread->isRunning())
+                {
+                    pxThreadState->pvThread->setPriority(THREAD_TASK_RUNNING_PRIO);
+                }
+                else
+                {
+                     pxThreadState->pvThread->start(THREAD_TASK_RUNNING_PRIO);
+                }
+
+                 while(QThread::currentThread() != pxThreadState->pvThread)
+                {
+                    qDebug() << "Putting " << QThread::currentThread()->objectName() << " to sleep";
+                    QThread::currentThread()->setPriority(THREAD_TASK_IDLE_PRIO);
+                    QThread::currentThread()->msleep(1); // todo??
+                }
 			}
 		}
 

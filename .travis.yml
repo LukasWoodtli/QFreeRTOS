@@ -9,6 +9,10 @@ os:
 #- osx
 
 branches:
+  except:
+  - master
+
+branches:
   only:
   - Qtfy
 

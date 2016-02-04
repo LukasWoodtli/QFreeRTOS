@@ -1,0 +1,5 @@
+<map id="vPortYieldProcessor" name="vPortYieldProcessor">
+<area shape="rect" id="node2" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#a716d176e9130fa97ac875a31e7453605" title="portRESTORE_CONTEXT" alt="" coords="198,5,378,32"/>
+<area shape="rect" id="node3" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#ad79a8b96e1489f7f0645e8d57360337d" title="portSAVE_CONTEXT" alt="" coords="212,56,364,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a26df422f8d635d5191a3e106fbeeed68" title="vTaskSwitchContext" alt="" coords="217,107,359,133"/>
+</map>

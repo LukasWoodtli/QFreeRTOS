@@ -1,0 +1,7 @@
+<map id="prvSetupTimerInterrupt" name="prvSetupTimerInterrupt">
+<area shape="rect" id="node2" href="$_paradigm_2_tern___e_e_2large__untested_2port_8c.html#a8cd02cee29b11e6f112c2bd899137d17" title="prvDummyISR" alt="" coords="237,5,347,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2large__untested_2port_8c.html#acf9df4f9ff9bc642609898d1a7503a53" title="prvNonPreemptiveTick" alt="" coords="213,56,371,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="419,56,560,83"/>
+<area shape="rect" id="node5" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="608,31,715,57"/>
+<area shape="rect" id="node6" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="638,81,685,108"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="pvPortMalloc" name="pvPortMalloc">
+<area shape="rect" id="node2" href="$tasks_8c.html#a91a076d3c5af24feadfe2bca03cc9f7a" title="prvAllocateTCBAndStack" alt="" coords="153,5,325,32"/>
+<area shape="rect" id="node3" href="$event__groups_8h.html#a7ed741a0902718aca9c8d3ca273f1b73" title="xEventGroupCreate" alt="" coords="169,56,309,83"/>
+<area shape="rect" id="node4" href="$queue_8c.html#ac999cdfbb09fff396fa818bb9a30b4e5" title="xQueueGenericCreate" alt="" coords="161,107,317,133"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a807a463b8fc68904094127b85ae5d23b" title="MPU_xQueueGenericCreate" alt="" coords="373,107,565,133"/>
+</map>

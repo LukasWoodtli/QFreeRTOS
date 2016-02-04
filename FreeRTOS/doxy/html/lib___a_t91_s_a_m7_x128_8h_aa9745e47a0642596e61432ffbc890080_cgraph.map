@@ -1,0 +1,12 @@
+<map id="AT91F_SSC_Configure" name="AT91F_SSC_Configure">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#a943bb6125d66d7956df049c6989f00f1" title="AT91F_PDC_Open" alt="" coords="237,183,374,209"/>
+<area shape="rect" id="node11" href="$lib___a_t91_s_a_m7_x128_8h.html#ae9e3b487a5fa77d67c7602dad996e0a7" title="AT91F_SSC_SetBaudrate" alt="" coords="216,233,395,260"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#a065419f8fc40760b2db4773c57812ac5" title="AT91F_PDC_DisableRx" alt="" coords="445,5,611,32"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#a232c924087e392d02daf17acf4b9be52" title="AT91F_PDC_DisableTx" alt="" coords="446,56,610,83"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_x128_8h.html#aa8532ddcc7f440a628adc6f75e1a00e2" title="AT91F_PDC_EnableRx" alt="" coords="447,107,609,133"/>
+<area shape="rect" id="node6" href="$lib___a_t91_s_a_m7_x128_8h.html#a5ac6178dea9c718b3236651a9c33ceb6" title="AT91F_PDC_EnableTx" alt="" coords="447,157,609,184"/>
+<area shape="rect" id="node7" href="$lib___a_t91_s_a_m7_x128_8h.html#a90529726eb41ee44d45f3bb99923b2ef" title="AT91F_PDC_SetNextRx" alt="" coords="443,208,613,235"/>
+<area shape="rect" id="node8" href="$lib___a_t91_s_a_m7_x128_8h.html#aa0b8b8b33d4b6514714851b653a011eb" title="AT91F_PDC_SetNextTx" alt="" coords="445,259,611,285"/>
+<area shape="rect" id="node9" href="$lib___a_t91_s_a_m7_x128_8h.html#af3a2086c959ae5ea3b73fcfc09bb46fb" title="AT91F_PDC_SetRx" alt="" coords="457,309,599,336"/>
+<area shape="rect" id="node10" href="$lib___a_t91_s_a_m7_x128_8h.html#ad32f369ef9e9f0f395e577e1ed1652df" title="AT91F_PDC_SetTx" alt="" coords="458,360,598,387"/>
+</map>

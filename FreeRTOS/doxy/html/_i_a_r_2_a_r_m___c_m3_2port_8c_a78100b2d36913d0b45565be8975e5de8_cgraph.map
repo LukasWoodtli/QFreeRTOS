@@ -1,0 +1,5 @@
+<map id="xPortSysTickHandler" name="xPortSysTickHandler">
+<area shape="rect" id="node2" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="419,5,466,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="200,56,341,83"/>
+<area shape="rect" id="node4" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="389,56,496,83"/>
+</map>

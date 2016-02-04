@@ -1,0 +1,9 @@
+<map id="AT91F_US_Close" name="AT91F_US_Close">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#ae7a00663d9b586d0060d83e4c3e1921f" title="AT91F_PDC_Close" alt="" coords="184,132,323,159"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a065419f8fc40760b2db4773c57812ac5" title="AT91F_PDC_DisableRx" alt="" coords="373,5,539,32"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a232c924087e392d02daf17acf4b9be52" title="AT91F_PDC_DisableTx" alt="" coords="374,56,538,83"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a90529726eb41ee44d45f3bb99923b2ef" title="AT91F_PDC_SetNextRx" alt="" coords="371,107,541,133"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#aa0b8b8b33d4b6514714851b653a011eb" title="AT91F_PDC_SetNextTx" alt="" coords="373,157,539,184"/>
+<area shape="rect" id="node7" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#af3a2086c959ae5ea3b73fcfc09bb46fb" title="AT91F_PDC_SetRx" alt="" coords="385,208,527,235"/>
+<area shape="rect" id="node8" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#ad32f369ef9e9f0f395e577e1ed1652df" title="AT91F_PDC_SetTx" alt="" coords="386,259,526,285"/>
+</map>

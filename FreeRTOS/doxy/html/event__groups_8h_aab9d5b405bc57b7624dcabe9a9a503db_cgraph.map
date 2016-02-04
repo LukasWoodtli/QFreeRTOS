@@ -1,0 +1,14 @@
+<map id="xEventGroupWaitBits" name="xEventGroupWaitBits">
+<area shape="rect" id="node2" href="$event__groups_8c.html#a0b39881dccfddfde543fb7181872fb5b" title="prvTestWaitCondition" alt="" coords="241,5,391,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a7793b4bbe45c10d4c5104c126b89e87c" title="uxTaskResetEventItemValue" alt="" coords="219,56,413,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a9d52fa7b60cc6a7b4fd0846700d7834c" title="vTaskPlaceOnUnorderedEventList" alt="" coords="203,107,429,133"/>
+<area shape="rect" id="node9" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="253,157,379,184"/>
+<area shape="rect" id="node10" href="$task_8h.html#a0241000e08a261372186d34825a35979" title="xTaskGetSchedulerState" alt="" coords="231,208,401,235"/>
+<area shape="rect" id="node11" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="255,259,377,285"/>
+<area shape="rect" id="node5" href="$list_8h.html#a71a6a6099b3cbd8f90539aabe5c9e572" title="vListInsertEnd" alt="" coords="536,56,643,83"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="749,208,856,235"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#a7859bfaa75a7c5524dd45b89036f1233" title="prvAddCurrentTaskToDelayedList" alt="" coords="478,107,701,133"/>
+<area shape="rect" id="node8" href="$list_8h.html#aa129290da5cbda47dffb7bf877b2f02a" title="vListInsert" alt="" coords="761,107,844,133"/>
+<area shape="rect" id="node12" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="779,284,826,311"/>
+<area shape="rect" id="node13" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="519,259,660,285"/>
+</map>

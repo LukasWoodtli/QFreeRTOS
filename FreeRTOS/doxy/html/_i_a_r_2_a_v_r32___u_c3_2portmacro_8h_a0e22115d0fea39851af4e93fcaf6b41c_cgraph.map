@@ -1,0 +1,7 @@
+<map id="pvPortRealloc" name="pvPortRealloc">
+<area shape="rect" id="node2" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="160,5,285,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="161,56,284,83"/>
+<area shape="rect" id="node4" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="523,31,629,57"/>
+<area shape="rect" id="node5" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="553,93,599,120"/>
+<area shape="rect" id="node6" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="333,56,475,83"/>
+</map>

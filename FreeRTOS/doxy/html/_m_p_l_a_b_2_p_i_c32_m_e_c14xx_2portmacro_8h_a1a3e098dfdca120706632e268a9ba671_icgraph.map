@@ -1,0 +1,5 @@
+<map id="vPortSetCP0Status" name="vPortSetCP0Status">
+<area shape="rect" id="node2" href="$_m_p_l_a_b_2_p_i_c32_m_e_c14xx_2port_8c.html#ad3b846f809a7cff169a8c3cb621ec1ee" title="uxPortSetInterruptMaskFromISR" alt="" coords="195,5,411,32"/>
+<area shape="rect" id="node3" href="$_m_p_l_a_b_2_p_i_c32_m_z_2portmacro_8h.html#a12396024e6649cc1dee6c0df77689812" title="vPortClearInterruptMaskFromISR" alt="" coords="193,56,413,83"/>
+<area shape="rect" id="node4" href="$_m_p_l_a_b_2_p_i_c32_m_e_c14xx_2port_8c.html#aa9ac2b26adfad38266878b63174ea70a" title="vPortIncrementTick" alt="" coords="462,56,599,83"/>
+</map>

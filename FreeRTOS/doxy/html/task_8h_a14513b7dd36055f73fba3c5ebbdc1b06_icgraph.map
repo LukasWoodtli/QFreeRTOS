@@ -1,0 +1,14 @@
+<map id="xTaskRemoveFromEventList" name="xTaskRemoveFromEventList">
+<area shape="rect" id="node2" href="$queue_8c.html#a7297c84a7c770ed57567bad1d3e2faf6" title="prvUnlockQueue" alt="" coords="287,49,409,76"/>
+<area shape="rect" id="node5" href="$queue_8c.html#ace632b55c3955bacae20978e261129a6" title="xQueueGenericReceive" alt="" coords="507,63,671,89"/>
+<area shape="rect" id="node7" href="$queue_8c.html#a5e54273dbe3f56b8bdc8f7abee67a871" title="xQueueGenericReset" alt="" coords="273,151,423,177"/>
+<area shape="rect" id="node3" href="$queue_8c.html#acb67c81366c00896b21cd826e07d885d" title="xQueueGenericSend" alt="" coords="516,5,663,32"/>
+<area shape="rect" id="node11" href="$queue_8c.html#a0fb58b25eb396a5cf8e1688b7e1a56cb" title="xQueueGenericSendFromISR" alt="" coords="248,201,448,228"/>
+<area shape="rect" id="node12" href="$queue_8c.html#a4df49fafb6ba4400ede6f2d07a40865f" title="xQueueGiveFromISR" alt="" coords="273,252,423,279"/>
+<area shape="rect" id="node13" href="$queue_8c.html#ac61ec62828e70ed35d18559a35550462" title="xQueueReceiveFromISR" alt="" coords="263,303,433,329"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#afec3801d053a850488cda14b0cad95fd" title="MPU_xQueueGenericSend" alt="" coords="739,5,923,32"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a11f6f4ba0b7f2612c09d7494aa695297" title="MPU_xQueueGenericReceive" alt="" coords="731,63,931,89"/>
+<area shape="rect" id="node8" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac7dccb1862fd656e1aedff73bd7c3433" title="MPU_xQueueGenericReset" alt="" coords="496,139,683,165"/>
+<area shape="rect" id="node9" href="$queue_8c.html#ac999cdfbb09fff396fa818bb9a30b4e5" title="xQueueGenericCreate" alt="" coords="511,189,667,216"/>
+<area shape="rect" id="node10" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a807a463b8fc68904094127b85ae5d23b" title="MPU_xQueueGenericCreate" alt="" coords="735,189,927,216"/>
+</map>

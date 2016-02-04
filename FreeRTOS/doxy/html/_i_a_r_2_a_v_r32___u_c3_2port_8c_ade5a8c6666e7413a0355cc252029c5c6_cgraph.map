@@ -1,0 +1,11 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#a716d176e9130fa97ac875a31e7453605" title="portRESTORE_CONTEXT" alt="" coords="195,5,375,32"/>
+<area shape="rect" id="node3" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="206,56,365,83"/>
+<area shape="rect" id="node4" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#a151847961076db0b8fa510b3847b4196" title="prvScheduleFirstTick" alt="" coords="424,31,571,57"/>
+<area shape="rect" id="node5" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#a4d7be48967d0bbfac84a6d33223702a2" title="vTick" alt="" coords="471,81,524,108"/>
+<area shape="rect" id="node6" href="$o_watcom_216_bit_d_o_s_2_flsh186_2portmacro_8h.html#adff63afc268c80ed13a4db7eb576c989" title="portENTER_CRITICAL" alt="" coords="619,31,778,57"/>
+<area shape="rect" id="node7" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#ae003e5aa4c4682b689129c010e7448d7" title="prvScheduleNextTick" alt="" coords="625,81,773,108"/>
+<area shape="rect" id="node8" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="628,132,769,159"/>
+<area shape="rect" id="node9" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="827,107,933,133"/>
+<area shape="rect" id="node10" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="857,157,903,184"/>
+</map>

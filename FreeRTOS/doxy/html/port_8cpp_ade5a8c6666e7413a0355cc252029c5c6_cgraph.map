@@ -1,0 +1,11 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$port_8cpp.html#a1d6207a2b13a4c014a0b0f4d54f900e0" title="prvProcessSimulatedInterrupts" alt="" coords="195,5,399,32"/>
+<area shape="rect" id="node4" href="$port_8cpp.html#adc28efa1df4fe75c8bb49108e6609377" title="prvProcessTickInterrupt" alt="" coords="216,56,379,83"/>
+<area shape="rect" id="node8" href="$port_8cpp.html#a905a83e355b01f0e9aca35992ddeae52" title="prvProcessYieldInterrupt" alt="" coords="213,107,381,133"/>
+<area shape="rect" id="node9" href="$port_8cpp.html#a05db1f56ad08c86031ba3242e98cd19c" title="prvSimulatedPeripheralTimer" alt="" coords="200,157,395,184"/>
+<area shape="rect" id="node10" href="$port_8cpp.html#a35b5d3a9b147da8e3adda2a2cc7b6cc0" title="vPortSetInterruptHandler" alt="" coords="213,208,382,235"/>
+<area shape="rect" id="node3" href="$task_8h.html#a26df422f8d635d5191a3e106fbeeed68" title="vTaskSwitchContext" alt="" coords="449,5,591,32"/>
+<area shape="rect" id="node5" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="449,56,591,83"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="640,31,747,57"/>
+<area shape="rect" id="node7" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="670,81,717,108"/>
+</map>

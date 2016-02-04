@@ -1,0 +1,12 @@
+<map id="AT91F_PDC_SetNextRx" name="AT91F_PDC_SetNextRx">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#ae7a00663d9b586d0060d83e4c3e1921f" title="AT91F_PDC_Close" alt="" coords="251,56,389,83"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a943bb6125d66d7956df049c6989f00f1" title="AT91F_PDC_Open" alt="" coords="251,145,389,172"/>
+<area shape="rect" id="node8" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#aafc2ac73bfe8e6584b59dfa99dcc734d" title="AT91F_PDC_ReceiveFrame" alt="" coords="224,221,416,248"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a1d538178f15852104ef39cbb837504c3" title="AT91F_SPI_Close" alt="" coords="494,5,626,32"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a7b4bbc35e32ebaa01d042c344ff4ded0" title="AT91F_US_Close" alt="" coords="495,56,625,83"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#aa9745e47a0642596e61432ffbc890080" title="AT91F_SSC_Configure" alt="" coords="479,107,641,133"/>
+<area shape="rect" id="node7" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#acbbed25fcf0256823175db5f1a8f1f39" title="AT91F_US_Configure" alt="" coords="483,157,637,184"/>
+<area shape="rect" id="node9" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a3fd88379fedca045387ceabc79da98f6" title="AT91F_SPI_ReceiveFrame" alt="" coords="467,208,653,235"/>
+<area shape="rect" id="node10" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#ae2e9978885885118d9106fb029b40b8a" title="AT91F_SSC_ReceiveFrame" alt="" coords="465,259,655,285"/>
+<area shape="rect" id="node11" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a413427ce949ec0321bf321a4c1b91cd1" title="AT91F_US_ReceiveFrame" alt="" coords="469,309,651,336"/>
+</map>

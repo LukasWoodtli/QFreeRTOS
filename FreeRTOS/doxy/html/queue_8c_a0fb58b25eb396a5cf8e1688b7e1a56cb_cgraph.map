@@ -1,0 +1,9 @@
+<map id="xQueueGenericSendFromISR" name="xQueueGenericSendFromISR">
+<area shape="rect" id="node2" href="$queue_8c.html#a77098159b7735e0c27e27aa7072376c6" title="prvCopyDataToQueue" alt="" coords="273,5,429,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="578,56,625,83"/>
+<area shape="rect" id="node5" href="$task_8h.html#a14513b7dd36055f73fba3c5ebbdc1b06" title="xTaskRemoveFromEventList" alt="" coords="254,107,447,133"/>
+<area shape="rect" id="node4" href="$task_8h.html#a02fe2e1419fd6c35f75a1357c5e5ce22" title="xTaskPriorityDisinherit" alt="" coords="524,5,679,32"/>
+<area shape="rect" id="node6" href="$tasks_8c.html#ad1b2e4995f863a99cf980836efe330d7" title="prvResetNextTaskUnblockTime" alt="" coords="497,208,706,235"/>
+<area shape="rect" id="node7" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="548,107,655,133"/>
+<area shape="rect" id="node8" href="$list_8h.html#a71a6a6099b3cbd8f90539aabe5c9e572" title="vListInsertEnd" alt="" coords="548,157,655,184"/>
+</map>

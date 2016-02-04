@@ -1,0 +1,11 @@
+<map id="EventGroup" name="EventGroup">
+<area shape="rect" id="node1" href="$group__x_event_group_wait_bits.html" title="xEventGroupWaitBits" alt="" coords="171,107,320,133"/>
+<area shape="rect" id="node2" href="$group__x_event_group_set_bits_from_i_s_r.html" title="xEventGroupSetBitsFromISR" alt="" coords="147,208,343,235"/>
+<area shape="rect" id="node3" href="$group__x_event_group_set_bits.html" title="xEventGroupSetBits" alt="" coords="174,259,317,285"/>
+<area shape="rect" id="node4" href="$group___event_group_handle__t.html" title="EventGroupHandle_t" alt="" coords="172,5,319,32"/>
+<area shape="rect" id="node5" href="$group__x_event_group_sync.html" title="xEventGroupSync" alt="" coords="181,309,310,336"/>
+<area shape="rect" id="node6" href="$group__x_event_group_clear_bits.html" title="xEventGroupClearBits" alt="" coords="169,157,322,184"/>
+<area shape="rect" id="node7" href="$group__x_event_group_create.html" title="xEventGroupCreate" alt="" coords="175,56,315,83"/>
+<area shape="rect" id="node8" href="$group__x_event_group_get_bits.html" title="xEventGroupGetBits" alt="" coords="173,360,317,387"/>
+<area shape="rect" id="node10" href="$group__x_event_group_get_bits_from_i_s_r.html" title="xEventGroupGetBitsFromISR" alt="" coords="147,411,344,437"/>
+</map>

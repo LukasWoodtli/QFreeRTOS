@@ -1,0 +1,10 @@
+<map id="MPU_xQueueGenericReset" name="MPU_xQueueGenericReset">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ad5691a9d6fd4c0b9f4e55426dd9a48ad" title="prvRaisePrivilege" alt="" coords="253,5,379,32"/>
+<area shape="rect" id="node3" href="$queue_8h.html#a3c13a9fe455ec2d35b5f8386a1040599" title="xQueueGenericReset" alt="" coords="241,56,391,83"/>
+<area shape="rect" id="node4" href="$list_8h.html#adeef7734d7d6d9a3eea642a70c106919" title="vListInitialise" alt="" coords="489,31,586,57"/>
+<area shape="rect" id="node5" href="$task_8h.html#a14513b7dd36055f73fba3c5ebbdc1b06" title="xTaskRemoveFromEventList" alt="" coords="441,81,634,108"/>
+<area shape="rect" id="node6" href="$tasks_8c.html#ad1b2e4995f863a99cf980836efe330d7" title="prvResetNextTaskUnblockTime" alt="" coords="683,5,893,32"/>
+<area shape="rect" id="node7" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="735,56,841,83"/>
+<area shape="rect" id="node8" href="$list_8h.html#a71a6a6099b3cbd8f90539aabe5c9e572" title="vListInsertEnd" alt="" coords="735,107,841,133"/>
+<area shape="rect" id="node9" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="765,157,811,184"/>
+</map>

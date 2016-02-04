@@ -1,0 +1,5 @@
+<map id="prvEnsureInterruptControllerIsInitialised" name="prvEnsureInterruptControllerIsInitialised">
+<area shape="rect" id="node2" href="$_g_c_c_2_micro_blaze_v8_2portmacro_8h.html#a46aef84bd9c309576be51201c6f09741" title="vPortDisableInterrupt" alt="" coords="264,5,411,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_micro_blaze_v8_2portmacro_8h.html#a0471656744e861f8982a1f5397a27838" title="vPortEnableInterrupt" alt="" coords="265,56,409,83"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_p_p_c440___xilinx_2portmacro_8h.html#a7e326747e8b11763013926ee724d5523" title="xPortInstallInterruptHandler" alt="" coords="245,107,429,133"/>
+</map>

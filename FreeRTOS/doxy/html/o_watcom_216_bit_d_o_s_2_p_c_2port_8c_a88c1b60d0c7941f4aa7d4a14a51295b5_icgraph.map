@@ -1,0 +1,4 @@
+<map id="prvPortResetPIC" name="prvPortResetPIC">
+<area shape="rect" id="node2" href="$o_watcom_216_bit_d_o_s_2_p_c_2port_8c.html#acf9df4f9ff9bc642609898d1a7503a53" title="prvNonPreemptiveTick" alt="" coords="176,5,333,32"/>
+<area shape="rect" id="node3" href="$o_watcom_216_bit_d_o_s_2_p_c_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="381,5,523,32"/>
+</map>

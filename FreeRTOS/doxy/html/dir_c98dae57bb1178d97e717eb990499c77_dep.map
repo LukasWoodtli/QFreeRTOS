@@ -1,0 +1,9 @@
+<map id="source/portable/oWatcom/16BitDOS/PC" name="source/portable/oWatcom/16BitDOS/PC">
+<area shape="rect" id="node1" href="dir_c98dae57bb1178d97e717eb990499c77.html" title="PC" alt="" coords="41,52,113,100"/>
+<area shape="rect" id="node2" href="dir_921d680e936b75076e79072318538b88.html" title="MPLAB" alt="" coords="5,148,77,196"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000092_000084.html" title="1" alt="" coords="61,127,69,141"/>
+<area shape="rect" id="node3" href="dir_8ee1a5e78eaec319fe5d64075812fc61.html" title="include" alt="" coords="41,244,113,292"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000092_000001.html" title="2" alt="" coords="90,220,98,235"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000084_000001.html" title="11" alt="" coords="62,217,78,231"/>
+<area shape="rect" id="clust1" href="dir_62c6543fd4c42f1dddde8774800bec22.html" title="16BitDOS" alt="" coords="31,16,124,111"/>
+</map>

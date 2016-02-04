@@ -1,0 +1,4 @@
+<map id="prvSetupTimerInterrupt" name="prvSetupTimerInterrupt">
+<area shape="rect" id="node2" href="$_g_c_c_2_tri_core__1782_2port_8c.html#a5986ea73d477ec35723b0e09e0cdcbb7" title="prvSystemTickHandler" alt="" coords="214,5,370,32"/>
+<area shape="rect" id="node3" href="$o_watcom_216_bit_d_o_s_2_flsh186_2portmacro_8h.html#adff63afc268c80ed13a4db7eb576c989" title="portENTER_CRITICAL" alt="" coords="419,5,578,32"/>
+</map>

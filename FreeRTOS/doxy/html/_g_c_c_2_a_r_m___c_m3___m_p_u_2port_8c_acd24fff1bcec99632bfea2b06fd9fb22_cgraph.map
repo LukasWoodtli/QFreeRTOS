@@ -1,0 +1,9 @@
+<map id="MPU_vPortFree" name="MPU_vPortFree">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ad5691a9d6fd4c0b9f4e55426dd9a48ad" title="prvRaisePrivilege" alt="" coords="171,5,296,32"/>
+<area shape="rect" id="node3" href="$_wiz_c_2_p_i_c18_2port_8c.html#a1e7cea2fd1bc894ea3b5f5e8179d259b" title="vPortFree" alt="" coords="193,56,273,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="344,31,469,57"/>
+<area shape="rect" id="node5" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="345,81,468,108"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="707,56,813,83"/>
+<area shape="rect" id="node7" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="737,119,783,145"/>
+<area shape="rect" id="node8" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="517,81,659,108"/>
+</map>

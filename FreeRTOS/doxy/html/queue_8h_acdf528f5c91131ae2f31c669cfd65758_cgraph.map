@@ -1,0 +1,8 @@
+<map id="xQueueReceiveFromISR" name="xQueueReceiveFromISR">
+<area shape="rect" id="node2" href="$queue_8c.html#ad9a2e17b2b13d4878f7af1361437320e" title="prvCopyDataFromQueue" alt="" coords="236,5,407,32"/>
+<area shape="rect" id="node4" href="$task_8h.html#a14513b7dd36055f73fba3c5ebbdc1b06" title="xTaskRemoveFromEventList" alt="" coords="225,56,418,83"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="549,5,595,32"/>
+<area shape="rect" id="node5" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="519,56,625,83"/>
+<area shape="rect" id="node6" href="$list_8h.html#a71a6a6099b3cbd8f90539aabe5c9e572" title="vListInsertEnd" alt="" coords="519,107,625,133"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#ad1b2e4995f863a99cf980836efe330d7" title="prvResetNextTaskUnblockTime" alt="" coords="467,157,677,184"/>
+</map>

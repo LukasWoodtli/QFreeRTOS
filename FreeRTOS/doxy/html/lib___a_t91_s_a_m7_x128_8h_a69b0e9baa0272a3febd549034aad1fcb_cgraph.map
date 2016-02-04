@@ -1,0 +1,6 @@
+<map id="AT91F_PDC_SendFrame" name="AT91F_PDC_SendFrame">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#a850c514a0aa55991ed5fe7c7e0989209" title="AT91F_PDC_IsNextTxEmpty" alt="" coords="230,5,426,32"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#a07dcf21b4e39e894efcc34afa3b4787d" title="AT91F_PDC_IsTxEmpty" alt="" coords="244,56,412,83"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#aa0b8b8b33d4b6514714851b653a011eb" title="AT91F_PDC_SetNextTx" alt="" coords="245,107,411,133"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_x128_8h.html#ad32f369ef9e9f0f395e577e1ed1652df" title="AT91F_PDC_SetTx" alt="" coords="258,157,398,184"/>
+</map>

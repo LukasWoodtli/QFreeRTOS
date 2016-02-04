@@ -1,0 +1,6 @@
+<map id="vPortYield" name="vPortYield">
+<area shape="rect" id="node2" href="$o_watcom_216_bit_d_o_s_2_flsh186_2portmacro_8h.html#adff63afc268c80ed13a4db7eb576c989" title="portENTER_CRITICAL" alt="" coords="147,5,306,32"/>
+<area shape="rect" id="node3" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#a716d176e9130fa97ac875a31e7453605" title="portRESTORE_CONTEXT" alt="" coords="137,56,317,83"/>
+<area shape="rect" id="node4" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#ad79a8b96e1489f7f0645e8d57360337d" title="portSAVE_CONTEXT" alt="" coords="151,107,303,133"/>
+<area shape="rect" id="node5" href="$_renesas_2_r_x100_2port_8c.html#a9c86137bc3c1cbffc39fff22627cb885" title="vTaskSwitchContext" alt="" coords="155,157,298,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="pvPortMalloc" name="pvPortMalloc">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a84af3fe5d0df7cd011534fb37e97b504" title="MPU_pvPortMalloc" alt="" coords="165,5,301,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_micro_blaze_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="163,56,304,83"/>
+<area shape="rect" id="node4" href="$_renesas_2_s_h2_a___f_p_u_2portmacro_8h.html#a8c8d74fd181a4df3300db81a72bcd17d" title="xPortUsesFloatingPoint" alt="" coords="153,107,314,133"/>
+</map>

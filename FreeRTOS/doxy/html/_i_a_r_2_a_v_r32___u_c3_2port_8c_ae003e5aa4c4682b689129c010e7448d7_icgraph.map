@@ -1,0 +1,5 @@
+<map id="prvScheduleNextTick" name="prvScheduleNextTick">
+<area shape="rect" id="node2" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#a4d7be48967d0bbfac84a6d33223702a2" title="vTick" alt="" coords="203,5,256,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_v_r32___u_c3_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="305,5,463,32"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_v_r32___u_c3_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="512,5,653,32"/>
+</map>

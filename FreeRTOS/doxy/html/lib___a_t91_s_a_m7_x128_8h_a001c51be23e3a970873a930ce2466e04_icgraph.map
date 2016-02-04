@@ -1,0 +1,21 @@
+<map id="AT91F_PIO_CfgPeriph" name="AT91F_PIO_CfgPeriph">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#a0d455227cf619e2d01fc40426f939105" title="AT91F_ADC_CfgPIO" alt="" coords="237,5,387,32"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#a33bc9f33509a141ddc019aff77379d1d" title="AT91F_AIC_CfgPIO" alt="" coords="241,56,383,83"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#a20538770220271ce6f6bc56340141694" title="AT91F_CAN_CfgPIO" alt="" coords="237,107,387,133"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_x128_8h.html#a76156828a1bc6d8d7d2c6407e16ec804" title="AT91F_DBGU_CfgPIO" alt="" coords="233,157,391,184"/>
+<area shape="rect" id="node6" href="$lib___a_t91_s_a_m7_x128_8h.html#a728f4551a3a9a2783f841064842d7b46" title="AT91F_EMAC_CfgPIO" alt="" coords="233,208,391,235"/>
+<area shape="rect" id="node7" href="$lib___a_t91_s_a_m7_x128_8h.html#a0fe1b1a35fb3e5ddc1d3ad8bc8fa3709" title="AT91F_PMC_CfgPIO" alt="" coords="237,259,387,285"/>
+<area shape="rect" id="node8" href="$lib___a_t91_s_a_m7_x128_8h.html#a0b690d563c2f014fc7d61deda403f1c8" title="AT91F_PWMC_CH0_CfgPIO" alt="" coords="213,309,411,336"/>
+<area shape="rect" id="node9" href="$lib___a_t91_s_a_m7_x128_8h.html#af24954299ad7a276905e17926675e8ad" title="AT91F_PWMC_CH1_CfgPIO" alt="" coords="213,360,411,387"/>
+<area shape="rect" id="node10" href="$lib___a_t91_s_a_m7_x128_8h.html#ad4c4d693cd8eea3f078a4c9f1df6102d" title="AT91F_PWMC_CH2_CfgPIO" alt="" coords="213,411,411,437"/>
+<area shape="rect" id="node11" href="$lib___a_t91_s_a_m7_x128_8h.html#a3162bc2434c21b8be8e79bd90016b8cc" title="AT91F_PWMC_CH3_CfgPIO" alt="" coords="213,461,411,488"/>
+<area shape="rect" id="node12" href="$lib___a_t91_s_a_m7_x128_8h.html#a8f49e94040e1664f4a839cf672852ac3" title="AT91F_SPI0_CfgPIO" alt="" coords="237,512,387,539"/>
+<area shape="rect" id="node13" href="$lib___a_t91_s_a_m7_x128_8h.html#af143bff5461f2e72fae67a49280fb120" title="AT91F_SPI1_CfgPIO" alt="" coords="237,563,387,589"/>
+<area shape="rect" id="node14" href="$lib___a_t91_s_a_m7_x128_8h.html#a2887c8d4df90490931680b2ffe227dcd" title="AT91F_SSC_CfgPIO" alt="" coords="238,613,386,640"/>
+<area shape="rect" id="node15" href="$lib___a_t91_s_a_m7_x128_8h.html#abcc4af6458f85a5a03190674e12158f5" title="AT91F_TC0_CfgPIO" alt="" coords="239,664,385,691"/>
+<area shape="rect" id="node16" href="$lib___a_t91_s_a_m7_x128_8h.html#a9aab7bf29eabb567b6b050ad73cbaba9" title="AT91F_TC1_CfgPIO" alt="" coords="239,715,385,741"/>
+<area shape="rect" id="node17" href="$lib___a_t91_s_a_m7_x128_8h.html#aee426d7c8c6ddd43b750545222d364c4" title="AT91F_TC2_CfgPIO" alt="" coords="239,765,385,792"/>
+<area shape="rect" id="node18" href="$lib___a_t91_s_a_m7_x128_8h.html#a79ea78bdca11f0dc4b7559072bab31fb" title="AT91F_TWI_CfgPIO" alt="" coords="239,816,385,843"/>
+<area shape="rect" id="node19" href="$lib___a_t91_s_a_m7_x128_8h.html#aeeefa4b2a9d0e0119707d757371b0bc4" title="AT91F_US0_CfgPIO" alt="" coords="239,867,385,893"/>
+<area shape="rect" id="node20" href="$lib___a_t91_s_a_m7_x128_8h.html#af00dc4c2e81eb1dcdca1d5074e45d557" title="AT91F_US1_CfgPIO" alt="" coords="239,917,385,944"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="pxPortInitialiseStack" name="pxPortInitialiseStack">
+<area shape="rect" id="node2" href="$_g_c_c_2_nios_i_i_2port_8c.html#af12554aec821763780e57c970f983b6d" title="prvReadGp" alt="" coords="231,5,321,32"/>
+<area shape="rect" id="node3" href="$_c_c_s_2_a_r_m___c_m4_f_2port_8c.html#a813e8227aedfc6bd83c66c4a9b8e4f41" title="prvTaskExitError" alt="" coords="215,56,337,83"/>
+<area shape="rect" id="node4" href="$_m_p_l_a_b_2_p_i_c32_m_e_c14xx_2portmacro_8h.html#ad523f50bacdc86f42c830315ae15db6e" title="ulPortGetCP0Cause" alt="" coords="205,107,347,133"/>
+<area shape="rect" id="node5" href="$_renesas_2_s_h2_a___f_p_u_2port_8c.html#a7a34437befcf8e09719a0642630f7fc6" title="ulPortGetGBR" alt="" coords="223,157,329,184"/>
+<area shape="rect" id="node6" href="$_b_c_c_216_bit_d_o_s_2_flsh186_2port_8c.html#af76f3c0b44c5b5c06fc046a4ee1a6423" title="vPortEndScheduler" alt="" coords="207,208,345,235"/>
+<area shape="rect" id="node7" href="$_softune_2_m_b96340_2port_8c.html#a13e5fe7547f79ab37fa3a6908f4a298e" title="xGet_DPR_ADB_bank" alt="" coords="197,259,355,285"/>
+<area shape="rect" id="node8" href="$_softune_2_m_b96340_2port_8c.html#ac1749073ebb72afb94fe7392ae8ba435" title="xGet_DTB_PCB_bank" alt="" coords="198,309,354,336"/>
+</map>

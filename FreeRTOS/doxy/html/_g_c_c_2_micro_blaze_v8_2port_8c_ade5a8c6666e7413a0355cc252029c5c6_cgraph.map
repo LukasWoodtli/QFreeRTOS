@@ -1,0 +1,5 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$_c_c_s_2_m_s_p430_x_2portmacro_8h.html#af6c61ea6aaa9367ebdc5348c1b121aa7" title="vApplicationSetupTimerInterrupt" alt="" coords="195,5,407,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="278,56,325,83"/>
+<area shape="rect" id="node4" href="$_c_c_s_2_a_r_m___c_m4_f_2port_8c.html#a5cfc38319f17c8e804020ec247b6325d" title="vPortStartFirstTask" alt="" coords="233,107,369,133"/>
+</map>

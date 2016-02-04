@@ -1,0 +1,8 @@
+<map id="vPortTickInterrupt" name="vPortTickInterrupt">
+<area shape="rect" id="node2" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#a716d176e9130fa97ac875a31e7453605" title="portRESTORE_CONTEXT" alt="" coords="182,5,362,32"/>
+<area shape="rect" id="node3" href="$_i_a_r_2_v850_e_s_2portmacro_8h.html#ad79a8b96e1489f7f0645e8d57360337d" title="portSAVE_CONTEXT" alt="" coords="196,56,348,83"/>
+<area shape="rect" id="node4" href="$_renesas_2_r_x100_2port_8c.html#a9c86137bc3c1cbffc39fff22627cb885" title="vTaskSwitchContext" alt="" coords="201,107,343,133"/>
+<area shape="rect" id="node5" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="201,157,343,184"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="411,132,517,159"/>
+<area shape="rect" id="node7" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="441,183,487,209"/>
+</map>

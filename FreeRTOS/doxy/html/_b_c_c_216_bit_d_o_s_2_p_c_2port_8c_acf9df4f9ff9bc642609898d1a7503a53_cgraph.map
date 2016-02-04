@@ -1,0 +1,6 @@
+<map id="prvNonPreemptiveTick" name="prvNonPreemptiveTick">
+<area shape="rect" id="node2" href="$_b_c_c_216_bit_d_o_s_2_p_c_2port_8c.html#a88c1b60d0c7941f4aa7d4a14a51295b5" title="prvPortResetPIC" alt="" coords="220,5,343,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="211,56,352,83"/>
+<area shape="rect" id="node4" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="400,31,507,57"/>
+<area shape="rect" id="node5" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="430,81,477,108"/>
+</map>

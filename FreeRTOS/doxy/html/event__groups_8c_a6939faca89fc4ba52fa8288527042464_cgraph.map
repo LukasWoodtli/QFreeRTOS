@@ -1,0 +1,9 @@
+<map id="vEventGroupDelete" name="vEventGroupDelete">
+<area shape="rect" id="node2" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="774,123,821,150"/>
+<area shape="rect" id="node3" href="$portable_8h.html#a735cd3085bb7ba06ff8e47565bfd7016" title="vPortFree" alt="" coords="192,73,272,99"/>
+<area shape="rect" id="node4" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="320,22,445,49"/>
+<area shape="rect" id="node8" href="$task_8h.html#aca64fad00201055cbaf9fff74f181b85" title="xTaskRemoveFromUnordered\lEventList" alt="" coords="494,276,695,317"/>
+<area shape="rect" id="node5" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="321,123,444,150"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="744,225,851,251"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="524,174,665,201"/>
+</map>

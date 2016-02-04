@@ -1,0 +1,4 @@
+<map id="alt_irq_register" name="alt_irq_register">
+<area shape="rect" id="node2" href="$_g_c_c_2_nios_i_i_2port_8c.html#a397ed34de04a678dc71217c713763423" title="prvSetupTimerInterrupt" alt="" coords="166,5,325,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_nios_i_i_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="373,5,515,32"/>
+</map>

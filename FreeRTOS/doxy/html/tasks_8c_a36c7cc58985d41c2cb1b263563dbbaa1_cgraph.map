@@ -1,0 +1,8 @@
+<map id="portTASK_FUNCTION" name="portTASK_FUNCTION">
+<area shape="rect" id="node2" href="$tasks_8c.html#a903096c962a2bc907f4b902a7d42302a" title="prvCheckTasksWaitingTermination" alt="" coords="211,84,440,110"/>
+<area shape="rect" id="node4" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="881,109,927,136"/>
+<area shape="rect" id="node3" href="$tasks_8c.html#a084d232640bd1d04bcac0b8784417015" title="vTaskSuspendAll" alt="" coords="488,33,613,60"/>
+<area shape="rect" id="node5" href="$tasks_8c.html#adf830ea0f150fcdfdaa944667137f080" title="xTaskResumeAll" alt="" coords="489,134,612,161"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="851,236,957,262"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="661,185,803,212"/>
+</map>

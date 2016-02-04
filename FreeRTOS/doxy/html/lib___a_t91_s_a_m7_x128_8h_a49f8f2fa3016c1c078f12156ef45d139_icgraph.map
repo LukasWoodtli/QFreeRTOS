@@ -1,0 +1,29 @@
+<map id="AT91F_PMC_EnablePeriphClock" name="AT91F_PMC_EnablePeriphClock">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#a8dcd858499e80c3ef81f022532556c5c" title="AT91F_ADC_CfgPMC" alt="" coords="282,5,438,32"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#acbdf60f6fd796cf3c7fb08376721c73e" title="AT91F_AES_CfgPMC" alt="" coords="283,56,437,83"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#a79155a1e2bd0b16d5146467e10525d0b" title="AT91F_AIC_CfgPMC" alt="" coords="285,107,435,133"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_x128_8h.html#adc0e9fed9e192ef26299caadbd6e55b6" title="AT91F_CAN_CfgPMC" alt="" coords="282,157,438,184"/>
+<area shape="rect" id="node6" href="$lib___a_t91_s_a_m7_x128_8h.html#af85b471b90d02eff97aef470a6bdf5d8" title="AT91F_DBGU_CfgPMC" alt="" coords="277,208,443,235"/>
+<area shape="rect" id="node7" href="$lib___a_t91_s_a_m7_x128_8h.html#a316c3a32b8057b623d8622947a03e331" title="AT91F_EMAC_CfgPMC" alt="" coords="277,259,443,285"/>
+<area shape="rect" id="node8" href="$lib___a_t91_s_a_m7_x128_8h.html#a27d79e5bbddb5d37fd2801ec975c615e" title="AT91F_MC_CfgPMC" alt="" coords="286,309,434,336"/>
+<area shape="rect" id="node9" href="$lib___a_t91_s_a_m7_x128_8h.html#ab386280c73442a5558f4d418b5ba9045" title="AT91F_PIOA_CfgPMC" alt="" coords="281,360,439,387"/>
+<area shape="rect" id="node10" href="$lib___a_t91_s_a_m7_x128_8h.html#aa2a5a8a9e1f1edc7d7d4ee85e8b28f0a" title="AT91F_PIOB_CfgPMC" alt="" coords="281,411,439,437"/>
+<area shape="rect" id="node11" href="$lib___a_t91_s_a_m7_x128_8h.html#a018a13b30ca75ecfa2d5d579ba7fecda" title="AT91F_PITC_CfgPMC" alt="" coords="281,461,439,488"/>
+<area shape="rect" id="node12" href="$lib___a_t91_s_a_m7_x128_8h.html#a708ecf76e44c8bd26a1d823d91d1c83d" title="AT91F_PMC_CfgPMC" alt="" coords="281,512,439,539"/>
+<area shape="rect" id="node13" href="$lib___a_t91_s_a_m7_x128_8h.html#aa216783dfc0231aec2a5a05538db3baa" title="AT91F_PWMC_CfgPMC" alt="" coords="275,563,445,589"/>
+<area shape="rect" id="node14" href="$lib___a_t91_s_a_m7_x128_8h.html#a66cb9ac773a7f4ad03ba766a275c6817" title="AT91F_RSTC_CfgPMC" alt="" coords="278,613,442,640"/>
+<area shape="rect" id="node15" href="$lib___a_t91_s_a_m7_x128_8h.html#accdc1f0e102331b58e1be798f001b695" title="AT91F_RTTC_CfgPMC" alt="" coords="279,664,441,691"/>
+<area shape="rect" id="node16" href="$lib___a_t91_s_a_m7_x128_8h.html#a6465f5fb4aa4c61ccf473194b54bf690" title="AT91F_SPI0_CfgPMC" alt="" coords="282,715,438,741"/>
+<area shape="rect" id="node17" href="$lib___a_t91_s_a_m7_x128_8h.html#a08bbd483007479a7fbe86acd2f4c4dee" title="AT91F_SPI1_CfgPMC" alt="" coords="282,765,438,792"/>
+<area shape="rect" id="node18" href="$lib___a_t91_s_a_m7_x128_8h.html#aad1e09250f06b9594c64db3d751ad884" title="AT91F_SSC_CfgPMC" alt="" coords="283,816,437,843"/>
+<area shape="rect" id="node19" href="$lib___a_t91_s_a_m7_x128_8h.html#ac35ffc55e9516215597c2abf21c5c62a" title="AT91F_TC0_CfgPMC" alt="" coords="284,867,436,893"/>
+<area shape="rect" id="node20" href="$lib___a_t91_s_a_m7_x128_8h.html#a2b4f14bea2d16c80a8a41b94761fa942" title="AT91F_TC1_CfgPMC" alt="" coords="284,917,436,944"/>
+<area shape="rect" id="node21" href="$lib___a_t91_s_a_m7_x128_8h.html#a040a1b7de4ddf4bd73313d3834fc4fdd" title="AT91F_TC2_CfgPMC" alt="" coords="284,968,436,995"/>
+<area shape="rect" id="node22" href="$lib___a_t91_s_a_m7_x128_8h.html#a025f3758edf40020b21e0b238f30db88" title="AT91F_TDES_CfgPMC" alt="" coords="279,1019,441,1045"/>
+<area shape="rect" id="node23" href="$lib___a_t91_s_a_m7_x128_8h.html#a51c7c79fb28f540454214bc469926b1e" title="AT91F_TWI_CfgPMC" alt="" coords="284,1069,436,1096"/>
+<area shape="rect" id="node24" href="$lib___a_t91_s_a_m7_x128_8h.html#a8302a993efb6366aea67be2ff4b42db3" title="AT91F_UDP_CfgPMC" alt="" coords="282,1120,438,1147"/>
+<area shape="rect" id="node25" href="$lib___a_t91_s_a_m7_x128_8h.html#ade44121449196dfc9bef195825fbf76e" title="AT91F_US0_CfgPMC" alt="" coords="283,1171,437,1197"/>
+<area shape="rect" id="node26" href="$lib___a_t91_s_a_m7_x128_8h.html#a278b7419f9f39265d7dc9252b2f9c7ab" title="AT91F_US1_CfgPMC" alt="" coords="283,1221,437,1248"/>
+<area shape="rect" id="node27" href="$lib___a_t91_s_a_m7_x128_8h.html#a9cb809e094ce47d56ef9329312ddb958" title="AT91F_VREG_CfgPMC" alt="" coords="277,1272,443,1299"/>
+<area shape="rect" id="node28" href="$lib___a_t91_s_a_m7_x128_8h.html#a48cedd1892005305566a3ea92b55b99d" title="AT91F_WDTC_CfgPMC" alt="" coords="277,1323,443,1349"/>
+</map>

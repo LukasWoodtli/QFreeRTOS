@@ -1,0 +1,10 @@
+<map id="portENTER_CRITICAL" name="portENTER_CRITICAL">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_v_r32___u_c3_2port_8c.html#ae17f84edd67d6e218b43620ca2954e3c" title="__attribute__" alt="" coords="242,5,342,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_tri_core__1782_2port_8c.html#a5986ea73d477ec35723b0e09e0cdcbb7" title="prvSystemTickHandler" alt="" coords="214,56,370,83"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_micro_blaze_2port_8c.html#add01c927fb689f7ec170e42d47d27927" title="vPortYield" alt="" coords="251,107,333,133"/>
+<area shape="rect" id="node7" href="$_i_a_r_2_a_v_r32___u_c3_2port_8c.html#a4d7be48967d0bbfac84a6d33223702a2" title="vTick" alt="" coords="265,157,319,184"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_tri_core__1782_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="419,56,578,83"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_tri_core__1782_2port_8c.html#a42d48e1e07c99c055d4353dc3b38b466" title="xPortStartScheduler" alt="" coords="627,56,768,83"/>
+<area shape="rect" id="node8" href="$_g_c_c_2_a_v_r32___u_c3_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="419,157,578,184"/>
+<area shape="rect" id="node9" href="$_g_c_c_2_a_v_r32___u_c3_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="627,157,768,184"/>
+</map>

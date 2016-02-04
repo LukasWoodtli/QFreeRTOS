@@ -1,0 +1,9 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$_i_a_r_2_l_p_c2000_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="195,56,354,83"/>
+<area shape="rect" id="node8" href="$_c_c_s_2_a_r_m___c_m4_f_2port_8c.html#a5cfc38319f17c8e804020ec247b6325d" title="vPortStartFirstTask" alt="" coords="207,107,343,133"/>
+<area shape="rect" id="node3" href="$_r_v_d_s_2_a_r_m7___l_p_c21xx_2port_8c.html#ac642f8fce0e1256dd848a1e4ffd0c30c" title="vNonPreemptiveTick" alt="" coords="415,5,561,32"/>
+<area shape="rect" id="node6" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="841,107,887,133"/>
+<area shape="rect" id="node7" href="$_c_c_s_2_a_r_m___cortex-_r4_2port_8c.html#aa3d36248da898dd1d2ae1784c76bdb9c" title="vPortNonPreemptiveTick" alt="" coords="403,56,573,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="621,56,763,83"/>
+<area shape="rect" id="node5" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="811,56,917,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="prvSystemTickHandler" name="prvSystemTickHandler">
+<area shape="rect" id="node2" href="$_g_c_c_2_tri_core__1782_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="211,5,370,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_tri_core__1782_2port_8c.html#a42d48e1e07c99c055d4353dc3b38b466" title="xPortStartScheduler" alt="" coords="419,5,560,32"/>
+</map>

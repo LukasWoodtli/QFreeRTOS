@@ -18,10 +18,8 @@ before_script:
 - git config --global user.email woodtli.lukas@gmail.com
 
 script:
-- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then 
-  - bash ./FreeRTOS/run_doxygen.sh
-  - bash ./publish_to_ghp.sh
-; fi
+- bash ./FreeRTOS/run_doxygen.sh
+- bash ./publish_to_ghp.sh
 
 env:
   global:

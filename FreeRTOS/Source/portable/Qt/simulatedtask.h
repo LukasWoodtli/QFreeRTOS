@@ -1,21 +1,21 @@
 #ifndef SIMULATEDTASK_H
 #define SIMULATEDTASK_H
 
-#include <QThread>
+#include <QObject>
 #include <QString>
 
 #include "FreeRTOS.h"
 
-class SimulatedTask : public QThread
+class SimulatedTask : public QObject
 {
     Q_OBJECT
     public:
         SimulatedTask(TaskFunction_t pxCode, void *pvParameters)
             :m_pxCode(pxCode),
              m_pvParameters(pvParameters)
-        {setObjectName(QString("Simulated FreeRTOS task (%1)").arg(s_totalNumThreads++));}
+        {setObjectName(QString("Simulated FreeRTOS task (%1): ").arg(s_totalNumThreads++));}
 
-    protected:
+    public:
         void run() {
             m_pxCode(m_pvParameters);
         }

@@ -132,6 +132,11 @@ extern "C" {
 
 #include "mpu_wrappers.h"
 
+
+#include <stdio.h>
+#include <stdlib.h>
+  
+
 /*
  * Setup the stack of a new task so it is ready to be placed under the
  * scheduler control.  The registers have to be placed on the stack in
@@ -198,6 +203,8 @@ void vPortEndScheduler( void ) PRIVILEGED_FUNCTION;
 	struct xMEMORY_REGION;
 	void vPortStoreTaskMPUSettings( xMPU_SETTINGS *xMPUSettings, const struct xMEMORY_REGION * const xRegions, StackType_t *pxBottomOfStack, uint16_t usStackDepth ) PRIVILEGED_FUNCTION;
 #endif
+
+    
 
 #ifdef __cplusplus
 }

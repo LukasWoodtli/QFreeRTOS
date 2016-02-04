@@ -28,7 +28,9 @@ SOURCES += \
     ../../Source/portable/Qt/port.cpp \
     mainclass.cpp \
     ../../Source/portable/Qt/simulatedtask.cpp \
-    ../../Source/portable/Qt/simulatedperipheraltimer.cpp
+    ../../Source/portable/Qt/microcontrollerenvironment.cpp \
+    ../../Source/portable/Qt/interruptflags.cpp \
+    ../../Source/portable/Qt/tasktimer.cpp
 
 HEADERS += \
     ../../Source/include/croutine.h \
@@ -48,7 +50,9 @@ HEADERS += \
     FreeRTOSConfig.h \
     mainclass.h \
     ../../Source/portable/Qt/simulatedtask.h \
-    ../../Source/portable/Qt/simulatedperipheraltimer.h
+    ../../Source/portable/Qt/microcontrollerenvironment.h \
+    ../../Source/portable/Qt/interruptflags.h \
+    ../../Source/portable/Qt/tasktimer.h
 
 
 

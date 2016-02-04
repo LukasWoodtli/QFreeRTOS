@@ -158,4 +158,14 @@ extern void vPortAssert(bool cond, unsigned long ulLine, const char * const pcFi
 //#define TRACE_EXIT_CRITICAL_SECTION() portEXIT_CRITICAL()
 //#include "trcKernelPort.h"
 
+extern void portTraceTaskCreate(char const * const taskName);
+#define traceTASK_CREATE(task) portTraceTaskCreate(task->pcTaskName);
+
+void portTraceTaskSwitchOut(char const * const taskName);
+#define traceTASK_SWITCHED_OUT() portTraceTaskSwitchOut(pcTaskGetTaskName(xTaskGetCurrentTaskHandle))
+
+void portTraceTaskSwitchIn(char const * const taskName);
+#define traceTASK_SWITCHED_IN() portTraceTaskSwitchIn(pcTaskGetTaskName(xTaskGetCurrentTaskHandle))
+
+
 #endif /* FREERTOS_CONFIG_H */

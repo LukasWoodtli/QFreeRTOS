@@ -168,10 +168,12 @@ static QueueHandle_t xQueue = NULL;
 /*-----------------------------------------------------------*/
 void main_blinky( void );
 
+extern void myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg);
 
 
 int main(int argc, char *argv[])
 {
+    //qInstallMessageHandler(myMessageOutput);
     QCoreApplication app(argc, argv);
     qDebug() << "Starting...";
 
@@ -215,7 +217,7 @@ void main_blinky( void )
 	there was insufficient FreeRTOS heap memory available for the idle and/or
 	timer tasks	to be created.  See the memory management section on the
 	FreeRTOS web site for more details. */
-	for( ;; );
+    for( ;; );
 }
 /*-----------------------------------------------------------*/
 

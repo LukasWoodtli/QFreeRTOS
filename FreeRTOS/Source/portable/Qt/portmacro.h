@@ -70,7 +70,6 @@
 #ifndef PORTMACRO_H
 #define PORTMACRO_H
 
-//#include <Windows.h>
 
 /******************************************************************************
 	Max and Min Tick Rates (taken from all available ports):
@@ -123,7 +122,8 @@ typedef unsigned long UBaseType_t;
 	#define portBYTE_ALIGNMENT		4
 #endif
 
-#define portYIELD()					vPortGenerateSimulatedInterrupt( portINTERRUPT_YIELD )
+void vPortYield();
+#define portYIELD()					vPortYield()
 
 /* Simulated interrupts return pdFALSE if no context switch should be performed,
 or a non-zero number if a context switch should be performed. */
@@ -208,6 +208,7 @@ void vPortSetInterruptHandler( uint32_t ulInterruptNumber, uint32_t (*pvHandler)
 #define THREAD_TASK_RUNNING_PRIO QThread::HighPriority
 #define THREAD_SV_TIMER_PRIO     QThread::HighestPriority
 #define THREAD_IRQ_PRIO          QThread::TimeCriticalPriority
+
 
 
 #endif

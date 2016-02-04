@@ -1,7 +1,7 @@
 language: cpp
 compiler:
 - clang
-- gcc
+#- gcc
 os:
 - linux
 branches:
@@ -18,8 +18,10 @@ before_script:
 - git config --global user.email woodtli.lukas@gmail.com
 
 script:
-- bash ./FreeRTOS/run_doxygen.sh
-- bash ./publish_to_ghp.sh
+- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then 
+  - bash ./FreeRTOS/run_doxygen.sh
+  - bash ./publish_to_ghp.sh
+; fi
 
 env:
   global:

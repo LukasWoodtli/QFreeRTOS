@@ -8,7 +8,7 @@ git config user.email "woodtli.lukas@gmail.com"
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
-git add -f ./FreeRTOS/doxy
+git add -f ./FreeRTOS/doxy/
 git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote

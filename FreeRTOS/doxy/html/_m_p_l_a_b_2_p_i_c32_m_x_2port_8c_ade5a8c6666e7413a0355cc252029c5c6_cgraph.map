@@ -1,0 +1,5 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$_m_p_l_a_b_2_p_i_c32_m_x_2port_8c.html#a813e8227aedfc6bd83c66c4a9b8e4f41" title="prvTaskExitError" alt="" coords="227,5,349,32"/>
+<area shape="rect" id="node3" href="$_m_p_l_a_b_2_p_i_c24__ds_p_i_c_2port_8c.html#a8b738ae962ed08676c294ff428c93fa5" title="vApplicationSetupTickTimer\lInterrupt" alt="" coords="195,57,381,98"/>
+<area shape="rect" id="node4" href="$_c_c_s_2_a_r_m___c_m4_f_2port_8c.html#a5cfc38319f17c8e804020ec247b6325d" title="vPortStartFirstTask" alt="" coords="220,123,356,149"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="portSetupTick" name="portSetupTick">
+<area shape="rect" id="node2" href="$_wiz_c_2_p_i_c18_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="157,5,299,32"/>
+<area shape="rect" id="node3" href="$tasks_8c.html#a598661cdd2a6af95a077245d11e3d142" title="vTaskStartScheduler" alt="" coords="347,5,493,32"/>
+</map>

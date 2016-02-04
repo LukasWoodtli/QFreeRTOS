@@ -1,0 +1,7 @@
+<map id="AT91F_US_SendFrame" name="AT91F_US_SendFrame">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a69b0e9baa0272a3febd549034aad1fcb" title="AT91F_PDC_SendFrame" alt="" coords="219,81,394,108"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a850c514a0aa55991ed5fe7c7e0989209" title="AT91F_PDC_IsNextTxEmpty" alt="" coords="443,5,639,32"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#a07dcf21b4e39e894efcc34afa3b4787d" title="AT91F_PDC_IsTxEmpty" alt="" coords="457,56,625,83"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#aa0b8b8b33d4b6514714851b653a011eb" title="AT91F_PDC_SetNextTx" alt="" coords="458,107,625,133"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_a_r_m7___a_t91_s_a_m7_s_2lib___a_t91_s_a_m7_x256_8h.html#ad32f369ef9e9f0f395e577e1ed1652df" title="AT91F_PDC_SetTx" alt="" coords="471,157,611,184"/>
+</map>

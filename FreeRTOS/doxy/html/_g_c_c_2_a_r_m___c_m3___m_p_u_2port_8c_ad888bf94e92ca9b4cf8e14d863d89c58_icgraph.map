@@ -1,0 +1,6 @@
+<map id="prvGetMPURegionSizeSetting" name="prvGetMPURegionSizeSetting">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac8f1b1a01e872c9158247e0bf5d5e472" title="prvSetupMPU" alt="" coords="299,5,405,32"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a761732f8e4da23f369a8d3cdc9d5dd9d" title="vPortStoreTaskMPUSettings" alt="" coords="256,56,448,83"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="511,5,652,32"/>
+<area shape="rect" id="node5" href="$tasks_8c.html#adba13007509a1513186e01d2989cf116" title="prvInitialiseTCBVariables" alt="" coords="496,56,667,83"/>
+</map>

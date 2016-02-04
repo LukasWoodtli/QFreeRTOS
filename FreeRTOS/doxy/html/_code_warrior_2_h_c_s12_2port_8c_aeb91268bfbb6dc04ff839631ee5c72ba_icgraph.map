@@ -1,0 +1,4 @@
+<map id="prvSetupTimerInterrupt" name="prvSetupTimerInterrupt">
+<area shape="rect" id="node2" href="$_code_warrior_2_h_c_s12_2port_8c.html#af6daded1e58ffe8853c8c1f71e574b1d" title="xBankedStartScheduler" alt="" coords="213,5,376,32"/>
+<area shape="rect" id="node3" href="$_code_warrior_2_h_c_s12_2port_8c.html#ade5a8c6666e7413a0355cc252029c5c6" title="xPortStartScheduler" alt="" coords="424,5,565,32"/>
+</map>

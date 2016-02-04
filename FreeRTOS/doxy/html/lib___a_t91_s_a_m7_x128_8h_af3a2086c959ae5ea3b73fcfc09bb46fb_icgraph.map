@@ -1,0 +1,12 @@
+<map id="AT91F_PDC_SetRx" name="AT91F_PDC_SetRx">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#ae7a00663d9b586d0060d83e4c3e1921f" title="AT91F_PDC_Close" alt="" coords="221,56,360,83"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_x128_8h.html#a943bb6125d66d7956df049c6989f00f1" title="AT91F_PDC_Open" alt="" coords="222,145,359,172"/>
+<area shape="rect" id="node8" href="$lib___a_t91_s_a_m7_x128_8h.html#aafc2ac73bfe8e6584b59dfa99dcc734d" title="AT91F_PDC_ReceiveFrame" alt="" coords="195,221,387,248"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#a1d538178f15852104ef39cbb837504c3" title="AT91F_SPI_Close" alt="" coords="465,5,597,32"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#a7b4bbc35e32ebaa01d042c344ff4ded0" title="AT91F_US_Close" alt="" coords="466,56,595,83"/>
+<area shape="rect" id="node6" href="$lib___a_t91_s_a_m7_x128_8h.html#aa9745e47a0642596e61432ffbc890080" title="AT91F_SSC_Configure" alt="" coords="449,107,612,133"/>
+<area shape="rect" id="node7" href="$lib___a_t91_s_a_m7_x128_8h.html#acbbed25fcf0256823175db5f1a8f1f39" title="AT91F_US_Configure" alt="" coords="454,157,607,184"/>
+<area shape="rect" id="node9" href="$lib___a_t91_s_a_m7_x128_8h.html#a3fd88379fedca045387ceabc79da98f6" title="AT91F_SPI_ReceiveFrame" alt="" coords="438,208,623,235"/>
+<area shape="rect" id="node10" href="$lib___a_t91_s_a_m7_x128_8h.html#ae2e9978885885118d9106fb029b40b8a" title="AT91F_SSC_ReceiveFrame" alt="" coords="435,259,626,285"/>
+<area shape="rect" id="node11" href="$lib___a_t91_s_a_m7_x128_8h.html#a413427ce949ec0321bf321a4c1b91cd1" title="AT91F_US_ReceiveFrame" alt="" coords="439,309,622,336"/>
+</map>

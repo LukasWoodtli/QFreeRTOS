@@ -1,0 +1,4 @@
+<map id="vPortSetupIDT" name="vPortSetupIDT">
+<area shape="rect" id="node2" href="$_g_c_c_2_i_a32__flat_2port_8c.html#ad1f3f6f4095543774160a3d9676d2852" title="prvSetInterruptGate" alt="" coords="192,5,331,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_i_a32__flat_2port_8c.html#a9427e8b1f123b9b6cd5f6531fbe342bf" title="vPortCentralInterruptWrapper" alt="" coords="163,56,360,83"/>
+</map>

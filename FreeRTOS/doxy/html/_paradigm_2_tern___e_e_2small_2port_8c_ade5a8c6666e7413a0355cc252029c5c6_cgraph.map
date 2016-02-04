@@ -1,0 +1,9 @@
+<map id="xPortStartScheduler" name="xPortStartScheduler">
+<area shape="rect" id="node2" href="$o_watcom_216_bit_d_o_s_2common_2portasm_8h.html#a1417b1dac299b0a3773613340427aa14" title="portFIRST_CONTEXT" alt="" coords="197,5,352,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2port_8c.html#aeb91268bfbb6dc04ff839631ee5c72ba" title="prvSetupTimerInterrupt" alt="" coords="195,56,354,83"/>
+<area shape="rect" id="node8" href="$_paradigm_2_tern___e_e_2small_2port_8c.html#a45db6cc1dd49dae903bd425b5c2027f9" title="prvYieldProcessor" alt="" coords="209,107,340,133"/>
+<area shape="rect" id="node4" href="$_paradigm_2_tern___e_e_2small_2port_8c.html#acf9df4f9ff9bc642609898d1a7503a53" title="prvNonPreemptiveTick" alt="" coords="403,56,560,83"/>
+<area shape="rect" id="node5" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="608,56,749,83"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="797,31,904,57"/>
+<area shape="rect" id="node7" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="827,81,874,108"/>
+</map>

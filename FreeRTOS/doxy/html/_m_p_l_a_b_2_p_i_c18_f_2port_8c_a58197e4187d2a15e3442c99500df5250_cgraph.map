@@ -1,0 +1,9 @@
+<map id="prvLowInterrupt" name="prvLowInterrupt">
+<area shape="rect" id="node2" href="$_m_p_l_a_b_2_p_i_c18_f_2port_8c.html#aa102d20e6272879e93b4fe81a049dad6" title="prvTickISR" alt="" coords="175,56,262,83"/>
+<area shape="rect" id="node7" href="$_m_p_l_a_b_2_p_i_c18_f_2port_8c.html#ac7e6fe280714dbd37e42dff8f41005c4" title="vSerialRxISR" alt="" coords="168,107,269,133"/>
+<area shape="rect" id="node8" href="$_m_p_l_a_b_2_p_i_c18_f_2port_8c.html#aca258f7ba02e25e54c401721007de5a9" title="vSerialTxISR" alt="" coords="169,157,269,184"/>
+<area shape="rect" id="node3" href="$task_8h.html#a978e25460ac35706f9ad30b46d9403d8" title="xTaskIncrementTick" alt="" coords="319,31,460,57"/>
+<area shape="rect" id="node6" href="$_renesas_2_r_x100_2port_8c.html#a9c86137bc3c1cbffc39fff22627cb885" title="vTaskSwitchContext" alt="" coords="318,81,461,108"/>
+<area shape="rect" id="node4" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="509,5,616,32"/>
+<area shape="rect" id="node5" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="539,56,586,83"/>
+</map>

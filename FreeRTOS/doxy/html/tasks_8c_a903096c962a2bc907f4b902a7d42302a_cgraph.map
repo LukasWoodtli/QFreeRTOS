@@ -1,0 +1,7 @@
+<map id="prvCheckTasksWaitingTermination" name="prvCheckTasksWaitingTermination">
+<area shape="rect" id="node2" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="645,5,752,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="675,107,722,133"/>
+<area shape="rect" id="node4" href="$tasks_8c.html#a084d232640bd1d04bcac0b8784417015" title="vTaskSuspendAll" alt="" coords="283,107,408,133"/>
+<area shape="rect" id="node5" href="$tasks_8c.html#adf830ea0f150fcdfdaa944667137f080" title="xTaskResumeAll" alt="" coords="284,56,407,83"/>
+<area shape="rect" id="node6" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="456,56,597,83"/>
+</map>

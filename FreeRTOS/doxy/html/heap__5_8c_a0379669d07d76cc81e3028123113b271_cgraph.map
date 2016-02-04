@@ -1,0 +1,8 @@
+<map id="pvPortMalloc" name="pvPortMalloc">
+<area shape="rect" id="node2" href="$heap__5_8c.html#a1a70fdf86d8a603f45e9b93c14e0d24a" title="prvInsertBlockIntoFreeList" alt="" coords="153,5,330,32"/>
+<area shape="rect" id="node3" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="598,107,645,133"/>
+<area shape="rect" id="node4" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="179,107,304,133"/>
+<area shape="rect" id="node5" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="180,157,303,184"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="568,183,675,209"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="379,157,520,184"/>
+</map>

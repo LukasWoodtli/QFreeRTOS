@@ -1,0 +1,10 @@
+<map id="xEventGroupCreate" name="xEventGroupCreate">
+<area shape="rect" id="node2" href="$portable_8h.html#a237d63f90b28e0950bd86f76815cd6e3" title="pvPortMalloc" alt="" coords="195,81,293,108"/>
+<area shape="rect" id="node9" href="$list_8h.html#adeef7734d7d6d9a3eea642a70c106919" title="vListInitialise" alt="" coords="195,132,293,159"/>
+<area shape="rect" id="node3" href="$task_8h.html#a366b302eba79d10b5ee2a3756f0fcc43" title="vTaskSuspendAll" alt="" coords="341,5,467,32"/>
+<area shape="rect" id="node4" href="$_paradigm_2_tern___e_e_2small_2portmacro_8h.html#a14d32f8130d3c0b212cfc751730b5b49" title="void" alt="" coords="734,107,781,133"/>
+<area shape="rect" id="node5" href="$task_8h.html#a003f8ae6d649225abd030cc76e1c7d0e" title="xTaskResumeAll" alt="" coords="343,107,465,133"/>
+<area shape="rect" id="node8" href="$heap__2_8c.html#a3e55181f788f17d9a3e7d226a5206e4f" title="prvHeapInit" alt="" coords="359,157,449,184"/>
+<area shape="rect" id="node6" href="$list_8h.html#a2eb1558482076fff8cafc63419c2d34a" title="uxListRemove" alt="" coords="704,183,811,209"/>
+<area shape="rect" id="node7" href="$tasks_8c.html#a54f31e9aef0eb7b87e48c7d68ecc84c1" title="xTaskIncrementTick" alt="" coords="515,157,656,184"/>
+</map>

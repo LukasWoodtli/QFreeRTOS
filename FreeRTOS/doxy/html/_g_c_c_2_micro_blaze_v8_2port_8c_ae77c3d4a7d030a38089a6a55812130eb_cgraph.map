@@ -1,0 +1,4 @@
+<map id="prvEnsureInterruptControllerIsInitialised" name="prvEnsureInterruptControllerIsInitialised">
+<area shape="rect" id="node2" href="$_g_c_c_2_micro_blaze_v8_2port_8c.html#a43eecfae6ac83875cba12b6f8a7df8b7" title="prvInitialiseInterruptController" alt="" coords="246,12,442,39"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_micro_blaze_v8_2portmacro_8h.html#a02e7621bd12097c626a731d7a0b452c7" title="vPortExceptionsInstallHandlers" alt="" coords="491,12,698,39"/>
+</map>

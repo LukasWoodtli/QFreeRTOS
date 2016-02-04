@@ -1,0 +1,9 @@
+<map id="source/portable/GCC/AVR32_UC3/port.c" name="source/portable/GCC/AVR32_UC3/port.c">
+<area shape="rect" id="node5" href="$_free_r_t_o_s_8h.html" title="FreeRTOS.h" alt="" coords="315,96,412,123"/>
+<area shape="rect" id="node14" href="$task_8h.html" title="task.h" alt="" coords="437,96,493,123"/>
+<area shape="rect" id="node9" href="$projdefs_8h.html" title="projdefs.h" alt="" coords="389,171,469,197"/>
+<area shape="rect" id="node10" href="$portable_8h.html" title="portable.h" alt="" coords="494,171,575,197"/>
+<area shape="rect" id="node11" href="$deprecated__definitions_8h.html" title="deprecated_definitions.h" alt="" coords="297,245,463,272"/>
+<area shape="rect" id="node13" href="$mpu__wrappers_8h.html" title="mpu_wrappers.h" alt="" coords="606,245,727,272"/>
+<area shape="rect" id="node15" href="$list_8h.html" title="list.h" alt="" coords="599,171,648,197"/>
+</map>

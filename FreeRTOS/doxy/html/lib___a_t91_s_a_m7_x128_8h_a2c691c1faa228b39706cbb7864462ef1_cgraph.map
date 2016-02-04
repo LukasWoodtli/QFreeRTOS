@@ -1,0 +1,5 @@
+<map id="AT91F_AIC_Open" name="AT91F_AIC_Open">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_x128_8h.html#ab354c5552fbb8ffd43aeda1193f87136" title="AT91F_AIC_ConfigureIt" alt="" coords="213,5,377,32"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_x128_8h.html#a3288ce2842a02f63ae6fe09c21870a52" title="AT91F_AIC_DisableIt" alt="" coords="219,56,370,83"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_x128_8h.html#af5683d3423dc1ed78c00bdb6249059ac" title="AT91F_AIC_SetExceptionVector" alt="" coords="187,107,403,133"/>
+</map>

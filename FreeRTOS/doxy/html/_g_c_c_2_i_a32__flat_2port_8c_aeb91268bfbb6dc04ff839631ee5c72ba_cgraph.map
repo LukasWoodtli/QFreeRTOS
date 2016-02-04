@@ -1,0 +1,5 @@
+<map id="prvSetupTimerInterrupt" name="prvSetupTimerInterrupt">
+<area shape="rect" id="node2" href="$_g_c_c_2_i_a32__flat_2port_8c.html#ad1f3f6f4095543774160a3d9676d2852" title="prvSetInterruptGate" alt="" coords="213,5,352,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_i_a32__flat_2port_8c.html#a55872590166dadefe3cb12afa147e3c5" title="vPortTimerHandler" alt="" coords="216,56,349,83"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_i_a32__flat_2port_8c.html#a220b88566b1282758d92b6ae16f19fe9" title="vPortYieldCall" alt="" coords="230,107,335,133"/>
+</map>

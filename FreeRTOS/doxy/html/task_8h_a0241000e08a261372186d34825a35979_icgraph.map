@@ -1,0 +1,8 @@
+<map id="xTaskGetSchedulerState" name="xTaskGetSchedulerState">
+<area shape="rect" id="node2" href="$event__groups_8h.html#a869511456b86426f52e2eec898bff341" title="xEventGroupSync" alt="" coords="242,5,371,32"/>
+<area shape="rect" id="node3" href="$event__groups_8h.html#aab9d5b405bc57b7624dcabe9a9a503db" title="xEventGroupWaitBits" alt="" coords="232,56,381,83"/>
+<area shape="rect" id="node4" href="$queue_8c.html#ace632b55c3955bacae20978e261129a6" title="xQueueGenericReceive" alt="" coords="225,107,389,133"/>
+<area shape="rect" id="node6" href="$queue_8c.html#acb67c81366c00896b21cd826e07d885d" title="xQueueGenericSend" alt="" coords="233,157,380,184"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a11f6f4ba0b7f2612c09d7494aa695297" title="MPU_xQueueGenericReceive" alt="" coords="437,107,637,133"/>
+<area shape="rect" id="node7" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#afec3801d053a850488cda14b0cad95fd" title="MPU_xQueueGenericSend" alt="" coords="445,157,629,184"/>
+</map>

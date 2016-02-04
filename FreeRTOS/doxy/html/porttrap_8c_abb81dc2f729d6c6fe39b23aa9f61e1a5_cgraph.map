@@ -1,0 +1,9 @@
+<map id="vTrapInstallHandlers" name="vTrapInstallHandlers">
+<area shape="rect" id="node2" href="$porttrap_8c.html#a0d55dbf825efb634259c4f5cecda97f6" title="vAssertionTrap" alt="" coords="249,5,361,32"/>
+<area shape="rect" id="node3" href="$porttrap_8c.html#aafb193dbaa52093ad36ea36e60742031" title="vContextManagementTrap" alt="" coords="215,56,395,83"/>
+<area shape="rect" id="node4" href="$porttrap_8c.html#a51979b7d23c817291c4bec28288e37ef" title="vInstructionErrorTrap" alt="" coords="232,107,379,133"/>
+<area shape="rect" id="node5" href="$porttrap_8c.html#a5df71a2cd124792eeddc63b57ec6de08" title="vInternalProtectionTrap" alt="" coords="225,157,385,184"/>
+<area shape="rect" id="node6" href="$porttrap_8c.html#a17a5aece41bf1c8f900abc6c18e21f79" title="vMMUTrap" alt="" coords="261,208,349,235"/>
+<area shape="rect" id="node7" href="$porttrap_8c.html#ad338c056dbca06ab78a09678009a1cb2" title="vNonMaskableInterruptTrap" alt="" coords="212,259,399,285"/>
+<area shape="rect" id="node8" href="$porttrap_8c.html#a8b44898fec32d8fa9b25be516928ff69" title="vSystemBusAndPeripheralsTrap" alt="" coords="198,309,413,336"/>
+</map>

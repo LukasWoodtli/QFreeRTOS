@@ -1,0 +1,12 @@
+<map id="AT91F_PDC_SetNextTx" name="AT91F_PDC_SetNextTx">
+<area shape="rect" id="node2" href="$lib___a_t91_s_a_m7_s64_8h.html#ae7a00663d9b586d0060d83e4c3e1921f" title="AT91F_PDC_Close" alt="" coords="240,56,379,83"/>
+<area shape="rect" id="node5" href="$lib___a_t91_s_a_m7_s64_8h.html#a943bb6125d66d7956df049c6989f00f1" title="AT91F_PDC_Open" alt="" coords="241,145,378,172"/>
+<area shape="rect" id="node8" href="$lib___a_t91_s_a_m7_s64_8h.html#a69b0e9baa0272a3febd549034aad1fcb" title="AT91F_PDC_SendFrame" alt="" coords="222,221,397,248"/>
+<area shape="rect" id="node3" href="$lib___a_t91_s_a_m7_s64_8h.html#a1d538178f15852104ef39cbb837504c3" title="AT91F_SPI_Close" alt="" coords="466,5,598,32"/>
+<area shape="rect" id="node4" href="$lib___a_t91_s_a_m7_s64_8h.html#a7b4bbc35e32ebaa01d042c344ff4ded0" title="AT91F_US_Close" alt="" coords="467,56,597,83"/>
+<area shape="rect" id="node6" href="$lib___a_t91_s_a_m7_s64_8h.html#aa9745e47a0642596e61432ffbc890080" title="AT91F_SSC_Configure" alt="" coords="451,107,613,133"/>
+<area shape="rect" id="node7" href="$lib___a_t91_s_a_m7_s64_8h.html#acbbed25fcf0256823175db5f1a8f1f39" title="AT91F_US_Configure" alt="" coords="455,157,609,184"/>
+<area shape="rect" id="node9" href="$lib___a_t91_s_a_m7_s64_8h.html#a9cf180ac507975a8259e99352d233732" title="AT91F_SPI_SendFrame" alt="" coords="448,208,616,235"/>
+<area shape="rect" id="node10" href="$lib___a_t91_s_a_m7_s64_8h.html#ad69b884ddf6875c1e37a7a2bdcb624a4" title="AT91F_SSC_SendFrame" alt="" coords="445,259,619,285"/>
+<area shape="rect" id="node11" href="$lib___a_t91_s_a_m7_s64_8h.html#abf1fd25f710588e80351fba226751bdf" title="AT91F_US_SendFrame" alt="" coords="449,309,615,336"/>
+</map>

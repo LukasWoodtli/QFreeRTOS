@@ -1,0 +1,22 @@
+<map id="prvRaisePrivilege" name="prvRaisePrivilege">
+<area shape="rect" id="node2" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a84af3fe5d0df7cd011534fb37e97b504" title="MPU_pvPortMalloc" alt="" coords="221,5,357,32"/>
+<area shape="rect" id="node3" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ab197334f4b3b92d0a0c744f568481a5d" title="MPU_uxQueueMessagesWaiting" alt="" coords="180,56,399,83"/>
+<area shape="rect" id="node4" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a46b9dfbf8afce7ac947cb5be9bf381fa" title="MPU_uxTaskGetNumberOfTasks" alt="" coords="179,107,399,133"/>
+<area shape="rect" id="node5" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#acd24fff1bcec99632bfea2b06fd9fb22" title="MPU_vPortFree" alt="" coords="231,157,348,184"/>
+<area shape="rect" id="node6" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aab32821ad688618871c0c2771b981a61" title="MPU_vPortInitialiseBlocks" alt="" coords="201,208,378,235"/>
+<area shape="rect" id="node7" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac378aaf28d5631ab7dcb8c75840f9544" title="MPU_vQueueDelete" alt="" coords="217,259,361,285"/>
+<area shape="rect" id="node8" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a851c943acdf98615bfa3940ae18b0158" title="MPU_vTaskAllocateMPURegions" alt="" coords="179,309,399,336"/>
+<area shape="rect" id="node9" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a5a89966e24025e52ea10166ce2c492d4" title="MPU_vTaskSuspendAll" alt="" coords="208,360,371,387"/>
+<area shape="rect" id="node10" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aaa61035f1d697dafc2b97227e0d81f0a" title="MPU_xPortGetFreeHeapSize" alt="" coords="191,411,388,437"/>
+<area shape="rect" id="node11" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a807a463b8fc68904094127b85ae5d23b" title="MPU_xQueueGenericCreate" alt="" coords="193,461,385,488"/>
+<area shape="rect" id="node12" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a11f6f4ba0b7f2612c09d7494aa695297" title="MPU_xQueueGenericReceive" alt="" coords="189,512,389,539"/>
+<area shape="rect" id="node13" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac7dccb1862fd656e1aedff73bd7c3433" title="MPU_xQueueGenericReset" alt="" coords="196,563,383,589"/>
+<area shape="rect" id="node14" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#afec3801d053a850488cda14b0cad95fd" title="MPU_xQueueGenericSend" alt="" coords="197,613,381,640"/>
+<area shape="rect" id="node15" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a7278ca1132b990192755eee24d6d2ef7" title="MPU_xQueueGetMutexHolder" alt="" coords="188,664,391,691"/>
+<area shape="rect" id="node16" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a9aeb66abf9fe439c26ffebcde56017ea" title="MPU_xQueuePeekFromISR" alt="" coords="195,715,384,741"/>
+<area shape="rect" id="node17" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a03080211c89a7d05e9918e1b5f364bf6" title="MPU_xTaskGenericCreate" alt="" coords="199,765,380,792"/>
+<area shape="rect" id="node18" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a3b24e0327b39b868b91ff031fbdab048" title="MPU_xTaskGetTickCount" alt="" coords="201,816,377,843"/>
+<area shape="rect" id="node19" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aa43b421a9eff441d0a850998551b17b4" title="MPU_xTaskResumeAll" alt="" coords="210,867,369,893"/>
+<area shape="rect" id="node20" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a2ed3554a3de09a3bd09d396ee081ab69" title="vPortEnterCritical" alt="" coords="227,917,352,944"/>
+<area shape="rect" id="node21" href="$_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aed20ada05b957181a0de042802a82a5b" title="vPortExitCritical" alt="" coords="231,968,347,995"/>
+</map>

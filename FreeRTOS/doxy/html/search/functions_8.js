@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['microblaze_5fdisable_5finterrupts',['microblaze_disable_interrupts',['../_g_c_c_2_micro_blaze_2portmacro_8h.html#a0bf78ff841f9b3b0ef2cde57729865ac',1,'microblaze_disable_interrupts(void):&#160;portmacro.h'],['../_g_c_c_2_micro_blaze_v8_2portmacro_8h.html#a0bf78ff841f9b3b0ef2cde57729865ac',1,'microblaze_disable_interrupts(void):&#160;portmacro.h']]],
+  ['microblaze_5fenable_5finterrupts',['microblaze_enable_interrupts',['../_g_c_c_2_micro_blaze_2portmacro_8h.html#a1fb342dccdb8b0b7fde838d3a275a5de',1,'microblaze_enable_interrupts(void):&#160;portmacro.h'],['../_g_c_c_2_micro_blaze_v8_2portmacro_8h.html#a1fb342dccdb8b0b7fde838d3a275a5de',1,'microblaze_enable_interrupts(void):&#160;portmacro.h']]],
+  ['microcontrollerenvironment',['MicroControllerEnvironment',['../class_micro_controller_environment.html#abba0fc799cd634e545fa3ce442310078',1,'MicroControllerEnvironment']]],
+  ['mpu_5fpvportmalloc',['MPU_pvPortMalloc',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a84af3fe5d0df7cd011534fb37e97b504',1,'port.c']]],
+  ['mpu_5fuxqueuemessageswaiting',['MPU_uxQueueMessagesWaiting',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ab197334f4b3b92d0a0c744f568481a5d',1,'port.c']]],
+  ['mpu_5fuxtaskgetnumberoftasks',['MPU_uxTaskGetNumberOfTasks',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a46b9dfbf8afce7ac947cb5be9bf381fa',1,'port.c']]],
+  ['mpu_5fvportfree',['MPU_vPortFree',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#acd24fff1bcec99632bfea2b06fd9fb22',1,'port.c']]],
+  ['mpu_5fvportinitialiseblocks',['MPU_vPortInitialiseBlocks',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aab32821ad688618871c0c2771b981a61',1,'port.c']]],
+  ['mpu_5fvqueuedelete',['MPU_vQueueDelete',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac378aaf28d5631ab7dcb8c75840f9544',1,'port.c']]],
+  ['mpu_5fvtaskallocatempuregions',['MPU_vTaskAllocateMPURegions',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a851c943acdf98615bfa3940ae18b0158',1,'port.c']]],
+  ['mpu_5fvtasksuspendall',['MPU_vTaskSuspendAll',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a5a89966e24025e52ea10166ce2c492d4',1,'port.c']]],
+  ['mpu_5fxportgetfreeheapsize',['MPU_xPortGetFreeHeapSize',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aaa61035f1d697dafc2b97227e0d81f0a',1,'port.c']]],
+  ['mpu_5fxqueuegenericcreate',['MPU_xQueueGenericCreate',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a807a463b8fc68904094127b85ae5d23b',1,'port.c']]],
+  ['mpu_5fxqueuegenericreceive',['MPU_xQueueGenericReceive',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a11f6f4ba0b7f2612c09d7494aa695297',1,'port.c']]],
+  ['mpu_5fxqueuegenericreset',['MPU_xQueueGenericReset',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#ac7dccb1862fd656e1aedff73bd7c3433',1,'port.c']]],
+  ['mpu_5fxqueuegenericsend',['MPU_xQueueGenericSend',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#afec3801d053a850488cda14b0cad95fd',1,'port.c']]],
+  ['mpu_5fxqueuegetmutexholder',['MPU_xQueueGetMutexHolder',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a7278ca1132b990192755eee24d6d2ef7',1,'port.c']]],
+  ['mpu_5fxqueuepeekfromisr',['MPU_xQueuePeekFromISR',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a9aeb66abf9fe439c26ffebcde56017ea',1,'port.c']]],
+  ['mpu_5fxtaskgenericcreate',['MPU_xTaskGenericCreate',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a03080211c89a7d05e9918e1b5f364bf6',1,'port.c']]],
+  ['mpu_5fxtaskgettickcount',['MPU_xTaskGetTickCount',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#a3b24e0327b39b868b91ff031fbdab048',1,'port.c']]],
+  ['mpu_5fxtaskresumeall',['MPU_xTaskResumeAll',['../_g_c_c_2_a_r_m___c_m3___m_p_u_2port_8c.html#aa43b421a9eff441d0a850998551b17b4',1,'port.c']]]
+];

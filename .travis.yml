@@ -23,6 +23,9 @@ script:
 - bash ./FreeRTOS/run_doxygen.sh
 - bash ./publish_to_ghp.sh
 
+- bash ./FreeRTOS/Demo/Qt/build_debug.sh
+
+
 env:
   global:
     secure: kcJ8wvQlceT2XvaYaeVemGAZ2AQwXBCixyp+TPJ61YFXRNfycJTXQCT0bj/AlNx3o7uctyfGubAoCzcmZCyTQ3GC7m8r3C/Sk61q+hwbg4LJK7TNSa9TQF4BYDr04NHVYNL0kP6NykrUSwFIcdg4AzONZ6TEhDi3GQjlfndvvViLuH7f5UiUjfigtRZ6nc9MXAjmVoTkYehVDGdv4CxuTkQthylTB98431QmAYrqqCp5UV8e3q1omislatTmXW+vwqef/KpqeeZGxrqOe2P0Ha2lPvQSrVMWfeqeHBhJ2FNLbW39Bz84EhTKIG1HtFH3TUx6aPfJwaT7qU1v+zYub0qBLXfEAp2Xb2K5HFETR7tLwB6XoPWX+HKX4+l8Dht8uQ245p/fjHjIeK+jZrQ3Pi//BhebjT1CF0NhjDm1Bgw1DC1udMzUwET0cypB4FjlE/xtd7VhcLwZQzWXioNCdq5giDg22syqHS+v6mSTrzbXqy2yNQ7WEBumFYND91qAZp8XdbmL+eBDMjFUe/m2lFnP1JbaExqxUxEllu6wohUk1C+J6+b1Ndgczka4RKyg/YRBbe+/83przuGNulZ0ZLFg51xyOVU8TPR1XPJMT86jXSt9zMkHtFQIuFGy439yg7/q9RtSn9hfT6fE1JrqZT/F26rTXeuVhqovTHuwuj0=

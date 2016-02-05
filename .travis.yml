@@ -19,6 +19,7 @@ before_script:
 - git config --global user.email woodtli.lukas@gmail.com
 
 script:
+
 - bash ./FreeRTOS/run_doxygen.sh
 - bash ./publish_to_ghp.sh
 

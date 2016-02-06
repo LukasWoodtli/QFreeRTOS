@@ -14,7 +14,7 @@ before_install:
 # from https://github.com/pbek/QOwnNotes/blob/develop/.travis.yml
 install:
   - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
-    bash travis_installs_linux.sh
+    bash -x travis_installs_linux.sh
       ;
     else
          brew update > /dev/null

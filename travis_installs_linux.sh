@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-#sudo apt-get -qq update
-#sudo apt-get -qq install g++-4.8 libc6-i386 qt54tools
+sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
+sudo apt-get update -qq
+sudo apt-get install graphviz doxygen mscgen
+sudo apt-get install qtbase5-dev
+sudo apt-get install qt5-default qttools5-dev-tools
 sudo apt-get -q install build-essential
-sudo apt-get -q install qt5-default

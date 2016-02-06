@@ -10,14 +10,11 @@ branches:
   - IrqLoop
 
 before_install:
-- sudo apt-get update -qq
-- sudo apt-get install -qq graphviz doxygen mscgen
-
 
 # from https://github.com/pbek/QOwnNotes/blob/develop/.travis.yml
 install:
   - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
-    bash -x travis_installs_linux.sh
+    bash travis_installs_linux.sh
       ;
     else
          brew update > /dev/null

@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 echo "Runnning doxygen in dir: "
 echo pwd
 
-doxygen Doxyfile  > /dev/null
+doxygen Doxyfile  > /dev/null 2>&1
 
 echo "Doxygen finished!"
 

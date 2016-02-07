@@ -170,7 +170,7 @@ static bool prvEndProcess( uint32_t dwCtrlType );
 unsigned long ulGetRunTimeCounterValue( void )
 {
     // TODO: QTimer
-    return UINT64_MAX;
+    return (unsigned long)(-1);
 }
 
 /*-----------------------------------------------------------*/

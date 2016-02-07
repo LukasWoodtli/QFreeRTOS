@@ -14,7 +14,7 @@ public:
         Yield     = (1 << 1)
     };
 
-    Q_DECLARE_FLAGS(Interrupts, Interrupt);
+    Q_DECLARE_FLAGS(Interrupts, Interrupt)
     Q_FLAG(Interrupts)
 
     explicit InterruptFlags(QObject *parent = 0);

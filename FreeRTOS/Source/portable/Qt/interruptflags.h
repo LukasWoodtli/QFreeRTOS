@@ -15,7 +15,7 @@ public:
     };
 
     Q_DECLARE_FLAGS(Interrupts, Interrupt)
-    Q_FLAG(Interrupts)
+    Q_FLAGS(Interrupts)
 
     explicit InterruptFlags(QObject *parent = 0);
     void setFlag(Interrupt interrupt);

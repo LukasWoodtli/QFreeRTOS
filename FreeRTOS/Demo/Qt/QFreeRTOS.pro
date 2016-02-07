@@ -62,3 +62,12 @@ INCLUDEPATH += ../../Source/include \
                ../../../FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/include/ConfigurationTemplate \
                ../../Source/portable/Qt/
 
+
+# output dirs
+release: DESTDIR = build/release
+debug:   DESTDIR = build/debug
+
+OBJECTS_DIR = $$DESTDIR/.obj
+MOC_DIR = $$DESTDIR/.moc
+RCC_DIR = $$DESTDIR/.qrc
+UI_DIR = $$DESTDIR/.ui

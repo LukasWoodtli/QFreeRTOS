@@ -1,3 +1,5 @@
+sudo: required
+
 language: cpp
 compiler:
 - clang
@@ -10,16 +12,48 @@ branches:
   - IrqLoop
 
 before_install:
-- sudo apt-get update -qq
-- sudo apt-get install -qq graphviz doxygen mscgen
+
+# from https://github.com/pbek/QOwnNotes/blob/develop/.travis.yml
+install:
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
+    bash -x travis_installs_linux.sh
+      ;
+    else
+         brew update > /dev/null
+      && brew install qt5
+      && chmod -R 755 /usr/local/opt/qt5/*
+      ;
+    fi
+
+script:
+  - if [ "${TRAVIS_OS_NAME}" = "linux" ]; then
+         QTDIR="/opt/qt54"
+      && PATH="$QTDIR/bin:$PATH"
+      && qt54-env.sh 
+      ;
+    else
+         QTDIR="/usr/local/opt/qt5"
+      && PATH="$QTDIR/bin:$PATH"
+      && LDFLAGS=-L$QTDIR/lib
+      && CPPFLAGS=-I$QTDIR/include
+      ;
+    fi
+
+
+
+
 
 before_script:
 - git config --global user.name 'Lukas Woodtli (travis-ci)'
 - git config --global user.email woodtli.lukas@gmail.com
 
 script:
-- bash ./FreeRTOS/run_doxygen.sh
-- bash ./publish_to_ghp.sh
+
+#- bash ./FreeRTOS/run_doxygen.sh
+#- bash ./publish_to_ghp.sh
+
+- bash ./FreeRTOS/Demo/Qt/build_debug.sh
+
 
 env:
   global:

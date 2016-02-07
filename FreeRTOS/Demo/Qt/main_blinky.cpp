@@ -243,12 +243,14 @@ const TickType_t xBlockTime = pdMS_TO_TICKS( mainQUEUE_SEND_FREQUENCY_MS );
 		The block time is specified in ticks, the constant used converts ticks
 		to ms.  While in the Blocked state this task will not consume any CPU
 		time. */
+        std::cout << "Send task delay" << std::endl;
 		vTaskDelayUntil( &xNextWakeTime, xBlockTime );
 
 		/* Send to the queue - causing the queue receive task to unblock and
 		toggle the LED.  0 is used as the block time so the sending operation
 		will not block - it shouldn't need to block as the queue should always
 		be empty at this point in the code. */
+        std::cout << "Send task: send to queue" << std::endl;
 		xQueueSend( xQueue, &ulValueToSend, 0U );
 	}
 }
@@ -270,6 +272,7 @@ unsigned long ulReceivedValue;
 		/* Wait until something arrives in the queue - this task will block
 		indefinitely provided INCLUDE_vTaskSuspend is set to 1 in
 		FreeRTOSConfig.h. */
+        std::cout << "Receive task wait for data" << std::endl;
 		xQueueReceive( xQueue, &ulReceivedValue, portMAX_DELAY );
 
 		/*  To get here something must have been received from the queue, but

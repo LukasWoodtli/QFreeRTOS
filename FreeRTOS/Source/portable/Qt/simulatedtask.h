@@ -15,7 +15,7 @@ class SimulatedTask : public QObject
              m_pvParameters(pvParameters)
         {setObjectName(QString("Simulated FreeRTOS task (%1): ").arg(s_totalNumThreads++));}
 
-    public:
+    public slots:
         void run() {
             m_pxCode(m_pvParameters);
         }

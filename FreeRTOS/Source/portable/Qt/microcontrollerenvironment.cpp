@@ -29,6 +29,7 @@ MicroControllerEnvironment::MicroControllerEnvironment(QObject *parent)
     QThread *thread = new QThread();
     m_taskTimer->moveToThread(thread);
     thread->start(THREAD_SV_TIMER_PRIO);
+    connect(thread, SIGNAL(finished()), thread, SLOT(deleteLater()));
 }
 
 
@@ -67,12 +68,8 @@ void MicroControllerEnvironment::run()
         m_processorRunning = true;
 
         Q_ASSERT(m_taskTimer->thread()->isRunning());
-        QMetaObject::invokeMethod(m_taskTimer, "startTimer", Qt::QueuedConnection);
+        QMetaObject::invokeMethod(m_taskTimer, "startTimer", Qt::BlockingQueuedConnection);
 
-        while (!m_taskTimer->isRunning())
-        {
-            QThread::currentThread()->msleep(UC_RESPONSIVENESS);
-        }
         forever
         {
             QMutex interruptEventMutex;
@@ -123,6 +120,7 @@ void MicroControllerEnvironment::run()
                     else
                     {
                          newTask->thread()->start(THREAD_TASK_RUNNING_PRIO);
+                         QMetaObject::invokeMethod(newTask, "run", Qt::BlockingQueuedConnection);
                     }
                 }
             }

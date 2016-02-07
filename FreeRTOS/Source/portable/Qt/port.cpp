@@ -98,6 +98,7 @@ MicroControllerEnvironment * getMicroControllerEnvironment()
         mod_microControllerSimulation = new MicroControllerEnvironment();
         mod_microControllerSimulation->moveToThread(mod_microControllerSimulationThread);
         mod_microControllerSimulationThread->start(THREAD_SV_TIMER_PRIO);
+        QObject::connect(mod_microControllerSimulationThread, SIGNAL(finished()), mod_microControllerSimulationThread, SLOT(deleteLater()));
     }
     return mod_microControllerSimulation;
 }

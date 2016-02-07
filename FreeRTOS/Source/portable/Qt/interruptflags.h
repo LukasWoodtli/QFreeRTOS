@@ -10,7 +10,7 @@ class InterruptFlags : public QObject
     Q_OBJECT
 public:
     enum Interrupt {
-        TaskTimer = 0,
+        TaskTimer = (1 << 0),
         Yield     = (1 << 1)
     };
 

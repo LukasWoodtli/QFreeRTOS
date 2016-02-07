@@ -162,10 +162,10 @@ extern void portTraceTaskCreate(char const * const taskName);
 #define traceTASK_CREATE(task) portTraceTaskCreate(task->pcTaskName);
 
 void portTraceTaskSwitchOut(char const * const taskName);
-#define traceTASK_SWITCHED_OUT() portTraceTaskSwitchOut(pcTaskGetTaskName(xTaskGetCurrentTaskHandle))
+#define traceTASK_SWITCHED_OUT() portTraceTaskSwitchOut(pcTaskGetTaskName(xTaskGetCurrentTaskHandle()))
 
 void portTraceTaskSwitchIn(char const * const taskName);
-#define traceTASK_SWITCHED_IN() portTraceTaskSwitchIn(pcTaskGetTaskName(xTaskGetCurrentTaskHandle))
+#define traceTASK_SWITCHED_IN() portTraceTaskSwitchIn(pcTaskGetTaskName(xTaskGetCurrentTaskHandle()))
 
 
 #endif /* FREERTOS_CONFIG_H */

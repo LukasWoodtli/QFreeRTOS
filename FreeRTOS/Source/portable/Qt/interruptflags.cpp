@@ -15,13 +15,11 @@ void InterruptFlags::setFlag(Interrupt interrupt)
 {
     QMutexLocker locker(&m_lock);
     m_interruptFlags |= interrupt;
-    qDebug() << m_interruptFlags;
 }
 
 bool InterruptFlags::isZero()
 {
     QMutexLocker locker(&m_lock);
-    qDebug() << m_interruptFlags;
     return int(m_interruptFlags) == 0;
 
 }

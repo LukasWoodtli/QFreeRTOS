@@ -10,6 +10,7 @@ set(QFREERTOS_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/queue.c
     ${CMAKE_CURRENT_SOURCE_DIR}/tasks.c
     ${CMAKE_CURRENT_SOURCE_DIR}/timers.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/portable/MemMang/heap_2.c
     PARENT_SCOPE
 )
 

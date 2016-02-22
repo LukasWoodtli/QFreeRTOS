@@ -1,3 +1,7 @@
+
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/portable/Qt)
+
+
 set(QFREERTOS_SOURCES
     ${QFREERTOS_SOURCES}
     ${CMAKE_CURRENT_SOURCE_DIR}/croutine.c
@@ -32,6 +36,4 @@ set(QFREERTOS_INCLUDE_DIRS
    ${CMAKE_CURRENT_SOURCE_DIR}
    PARENT_SCOPE
 )
-
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/portable/Qt)
 

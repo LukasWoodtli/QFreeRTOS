@@ -23,7 +23,7 @@ set(HEADERS
 
 
 # Tell CMake to create the helloworld executable
-add_executable(qfreertos ${SOURCES} ${HEADERS} ${QFREERTOS_SOURCES} ${QFREERTOS_HEADERS})
+add_executable(qfreertos ${QFREERTOS_SOURCES} ${SOURCES})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(qfreertos Qt5::Core)

@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 2.8.11)
+ cmake_minimum_required(VERSION 2.8.11)
 
-project(QFreeRTOS)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -21,16 +20,10 @@ set(HEADERS
   mainclass.h
 )
 
-add_subdirectory(../../Source bin/)
-
-include_directories(../../Source/include
-                    ../../Source/portable/Qt
-
-)
 
 
 # Tell CMake to create the helloworld executable
-add_executable(qfreertos ${SOURCES} ${HEADERS})
+add_executable(qfreertos ${SOURCES} ${HEADERS} ${QFREERTOS_SOURCES} ${QFREERTOS_HEADERS})
 
 # Use the Widgets module from Qt 5.
 target_link_libraries(qfreertos Qt5::Core)

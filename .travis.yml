@@ -52,8 +52,8 @@ script:
 #- bash ./FreeRTOS/run_doxygen.sh
 #- bash ./publish_to_ghp.sh
 
-- bash ./FreeRTOS/Demo/Qt/build_debug.sh
-
+#- bash ./FreeRTOS/Demo/Qt/build_debug.sh
+- bash ./build_debug.sh
 
 env:
   global:
